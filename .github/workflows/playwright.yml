@@ -54,5 +54,5 @@ jobs:
       - name: Publish Report Link to Summary
         run: |
           REPORT_URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
-          echo "### ✅ Allure Report Available" >> $GITHUB_STEP_SUMMARY
-          echo "👉 [Click to open Allure Report]($REPORT_URL)" >> $GITHUB_STEP_SUMMARY
+          echo "###Allure Report Available" >> $GITHUB_STEP_SUMMARY
+          echo "[Click to open Allure Report]($REPORT_URL)" >> $GITHUB_STEP_SUMMARY
