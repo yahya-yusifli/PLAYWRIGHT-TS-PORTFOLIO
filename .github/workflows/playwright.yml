@@ -1,4 +1,9 @@
-name: Playwright + Allure CI
+name: Playwright Tests with Allure Reporting
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
 
 on:
   push:
@@ -12,21 +17,19 @@ jobs:
     timeout-minutes: 60
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: lts/*
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Install Browsers
+      - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
-      - name: Run Tests with Allure
+      - name: Run Playwright tests
         env:
           BASE_URL: ${{ secrets.BASE_URL }}
           SAUCEDEMO_STANDARD_USER: ${{ secrets.SAUCEDEMO_STANDARD_USER }}
@@ -34,21 +37,19 @@ jobs:
           SAUCEDEMO_PROBLEM_USER: ${{ secrets.SAUCEDEMO_PROBLEM_USER }}
           SAUCEDEMO_LOCKED_USER: ${{ secrets.SAUCEDEMO_LOCKED_USER }}
           SAUCEDEMO_PERFORMANCE_USER: ${{ secrets.SAUCEDEMO_PERFORMANCE_USER }}
-        run: |
-          npx playwright test --reporter=line,allure-playwright
+        run: npx playwright test --reporter=line,allure-playwright
 
       - name: Generate Allure Report
-        run: |
-          npx allure generate allure-results --clean -o allure-report
+        run: npx allure generate allure-results --clean -o allure-report
 
       - name: Deploy Allure Report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           publish_branch: gh-pages
           publish_dir: allure-report
 
       - name: Add Summary Link
         run: |
-          echo "### Allure Report Published" >> $GITHUB_STEP_SUMMARY
-          echo "**View Report:** https://$GITHUB_REPOSITORY_OWNER.github.io/${{ github.event.repository.name }}/" >> $GITHUB_STEP_SUMMARY
+          echo "### ✔ Allure Report Published" >> $GITHUB_STEP_SUMMARY
+          echo "🔗 https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/" >> $GITHUB_STEP_SUMMARY
