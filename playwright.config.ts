@@ -17,7 +17,7 @@ dotenv.config();
     ["json", { outputFile: "test-results.json" }],
     ['allure-playwright',{
       detail: true,
-      outputFolder: 'allure-results',
+      outputFolder: "allure-results",
       suiteTitle: true,
     }],
   ],

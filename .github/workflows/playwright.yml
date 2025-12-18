@@ -1,4 +1,4 @@
-name: Playwright Tests with Allure Reporting
+name: Playwright + Allure CI
 
 on:
   push:
@@ -8,23 +8,25 @@ on:
 
 jobs:
   test:
-    timeout-minutes: 60
     runs-on: ubuntu-latest
+    timeout-minutes: 60
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
           node-version: lts/*
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Install Playwright Browsers
+      - name: Install Browsers
         run: npx playwright install --with-deps
 
-      - name: Run Playwright tests
+      - name: Run Tests with Allure
         env:
           BASE_URL: ${{ secrets.BASE_URL }}
           SAUCEDEMO_STANDARD_USER: ${{ secrets.SAUCEDEMO_STANDARD_USER }}
@@ -35,20 +37,18 @@ jobs:
         run: |
           npx playwright test --reporter=line,allure-playwright
 
-      - name: Generate Allure HTML Report
+      - name: Generate Allure Report
         run: |
           npx allure generate allure-results --clean -o allure-report
 
-      - name: Upload Allure HTML Report
-        uses: actions/upload-artifact@v4
+      - name: Deploy Allure Report to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          name: allure-report
-          path: allure-report/
-          retention-days: 30
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: allure-report
 
-      - name: Add Allure Report Link to Summary
+      - name: Add Summary Link
         run: |
-          echo "## ✔ Allure Report has been generated" >> $GITHUB_STEP_SUMMARY
-          echo "Download or view from **Artifacts → allure-report**" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "Run URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" >> $GITHUB_STEP_SUMMARY
+          echo "### Allure Report Published" >> $GITHUB_STEP_SUMMARY
+          echo "**View Report:** https://$GITHUB_REPOSITORY_OWNER.github.io/${{ github.event.repository.name }}/" >> $GITHUB_STEP_SUMMARY
