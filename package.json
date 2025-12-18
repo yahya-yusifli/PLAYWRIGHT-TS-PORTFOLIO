@@ -1,0 +1,47 @@
+{
+  "name": "my-first-playwright-project",
+  "version": "1.0.0",
+  "description": "Learning Playwright basics",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit",
+    "test:mobile": "playwright test --project='Mobile Chrome'",
+    "test:saucedemo": "TEST_SITE=saucedemo playwright test tests/saucedemo.spec.ts--headed",
+    "test:todomvc": "TEST_SITE=todomvc playwright test tests/todomvc.spec.ts --headed",
+    "test:parallel": "playwright test --workers=4",
+    "test:serial": "playwright test --workers=1",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen",
+    "codegen:saucedemo": "playwright codegen https://www.saucedemo.com",
+    "codegen:todomvc": "playwright codegen https://demo.playwright.dev/todomvc",
+    "install:browsers": "playwright install",
+    "test:allure": "playwright test --reporter=allure-playwright",
+    "allure:generate": "allure generate allure-results --clean -o allure-report",
+    "allure:open": "allure open allure-report",
+    "allure:serve": "allure serve allure-results"
+  },
+  "keywords": [
+    "playwright",
+    "testing",
+    "automation",
+    "e2e"
+  ],
+  "author": "Yahya Yusifli",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "@faker-js/faker": "^10.1.0",
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^25.0.2",
+    "allure-commandline": "^2.36.0",
+    "allure-playwright": "^3.4.3",
+    "dotenv": "^17.2.3",
+    "typescript": "^5.9.3"
+  }
+}
