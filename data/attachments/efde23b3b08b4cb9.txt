@@ -1,0 +1,2 @@
+✓ Retrieved 10 users
+✓ First user: Leanne Graham

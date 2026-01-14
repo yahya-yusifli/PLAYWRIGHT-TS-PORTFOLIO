@@ -1,0 +1,1 @@
+✓ Post deleted (mocked by API)
