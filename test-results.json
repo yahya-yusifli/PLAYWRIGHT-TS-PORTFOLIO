@@ -9,9 +9,9 @@
     "globalTimeout": 0,
     "grep": {},
     "grepInvert": null,
-    "maxFailures": 0,
+    "maxFailures": 1,
     "metadata": {
-      "actualWorkers": 6
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "reporter": [
@@ -49,7 +49,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 6
+          "actualWorkers": 1
         },
         "id": "chromium",
         "name": "chromium",
@@ -58,14 +58,14 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 30000
+        "timeout": 0
       },
       {
         "outputDir": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/Playwright-TypeScript-Portfolio/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 6
+          "actualWorkers": 1
         },
         "id": "firefox",
         "name": "firefox",
@@ -74,14 +74,14 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 30000
+        "timeout": 0
       },
       {
         "outputDir": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/Playwright-TypeScript-Portfolio/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 6
+          "actualWorkers": 1
         },
         "id": "webkit",
         "name": "webkit",
@@ -90,14 +90,14 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 30000
+        "timeout": 0
       },
       {
         "outputDir": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/Playwright-TypeScript-Portfolio/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 6
+          "actualWorkers": 1
         },
         "id": "Mobile Chrome",
         "name": "Mobile Chrome",
@@ -106,14 +106,14 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 30000
+        "timeout": 0
       },
       {
         "outputDir": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/Playwright-TypeScript-Portfolio/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 6
+          "actualWorkers": 1
         },
         "id": "Mobile Safari",
         "name": "Mobile Safari",
@@ -122,7 +122,7 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 30000
+        "timeout": 0
       }
     ],
     "shard": null,
@@ -130,742 +130,201 @@
     "updateSnapshots": "missing",
     "updateSourceMethod": "patch",
     "version": "1.57.0",
-    "workers": 6,
+    "workers": 1,
     "webServer": null
   },
   "suites": [
     {
-      "title": "ui/auth/loginWithDDT.spec.ts",
-      "file": "ui/auth/loginWithDDT.spec.ts",
+      "title": "ui/products/products.spec.ts",
+      "file": "ui/products/products.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "SauceDemo Login with Multiple Users @smoke",
-          "file": "ui/auth/loginWithDDT.spec.ts",
-          "line": 12,
+          "title": "SauceDemo Product Tests",
+          "file": "ui/products/products.spec.ts",
+          "line": 7,
           "column": 6,
-          "specs": [
+          "specs": [],
+          "suites": [
             {
-              "title": "User #1 - login test (standard_user)",
-              "ok": true,
-              "tags": [
-                "smoke"
-              ],
-              "tests": [
+              "title": "Sorting Functionality",
+              "file": "ui/products/products.spec.ts",
+              "line": 61,
+              "column": 8,
+              "specs": [
                 {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
+                  "title": "should sort price high to low",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 1133,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-18T03:16:38.955Z",
+                      "timeout": 0,
                       "annotations": [],
-                      "attachments": []
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 29522,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-14T12:38:14.809Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
                     }
                   ],
-                  "status": "expected"
-                }
-              ],
-              "id": "bbe9c3579c202181fc8e-a538cfb82b36655a66e8",
-              "file": "ui/auth/loginWithDDT.spec.ts",
-              "line": 15,
-              "column": 9
-            },
-            {
-              "title": "User #2 - login test (locked_out_user)",
-              "ok": true,
-              "tags": [
-                "smoke"
-              ],
-              "tests": [
+                  "id": "4a9f5a1bfed7ccb76b8d-cb58854b9a5a81dec3ee",
+                  "file": "ui/products/products.spec.ts",
+                  "line": 90,
+                  "column": 9
+                },
                 {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
+                  "title": "should sort price high to low",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 1193,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-18T03:16:38.956Z",
+                      "timeout": 0,
                       "annotations": [],
-                      "attachments": []
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 42374,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-14T12:38:44.925Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
                     }
                   ],
-                  "status": "expected"
-                }
-              ],
-              "id": "bbe9c3579c202181fc8e-c09ab41c70bf0843e9bf",
-              "file": "ui/auth/loginWithDDT.spec.ts",
-              "line": 15,
-              "column": 9
-            },
-            {
-              "title": "User #3 - login test (problem_user)",
-              "ok": true,
-              "tags": [
-                "smoke"
-              ],
-              "tests": [
+                  "id": "4a9f5a1bfed7ccb76b8d-f7dd98dfe8060a0fb84e",
+                  "file": "ui/products/products.spec.ts",
+                  "line": 90,
+                  "column": 9
+                },
                 {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
+                  "title": "should sort price high to low",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 1201,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-18T03:16:38.959Z",
+                      "timeout": 0,
                       "annotations": [],
-                      "attachments": []
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 12593,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-14T12:39:28.239Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
                     }
                   ],
-                  "status": "expected"
-                }
-              ],
-              "id": "bbe9c3579c202181fc8e-7e8187877ef9b4b99737",
-              "file": "ui/auth/loginWithDDT.spec.ts",
-              "line": 15,
-              "column": 9
-            },
-            {
-              "title": "User #4 - login test (invalid_user)",
-              "ok": true,
-              "tags": [
-                "smoke"
-              ],
-              "tests": [
+                  "id": "4a9f5a1bfed7ccb76b8d-377e188c559ff2103aa5",
+                  "file": "ui/products/products.spec.ts",
+                  "line": 90,
+                  "column": 9
+                },
                 {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
+                  "title": "should sort price high to low",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 1167,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-18T03:16:38.946Z",
+                      "timeout": 0,
                       "annotations": [],
-                      "attachments": []
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 4076,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-14T12:39:41.270Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
                     }
                   ],
-                  "status": "expected"
-                }
-              ],
-              "id": "bbe9c3579c202181fc8e-e1c457170b5d66976cce",
-              "file": "ui/auth/loginWithDDT.spec.ts",
-              "line": 15,
-              "column": 9
-            },
-            {
-              "title": "User #1 - login test (standard_user)",
-              "ok": true,
-              "tags": [
-                "smoke"
-              ],
-              "tests": [
+                  "id": "4a9f5a1bfed7ccb76b8d-403d815c6d4dcf6641e8",
+                  "file": "ui/products/products.spec.ts",
+                  "line": 90,
+                  "column": 9
+                },
                 {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
+                  "title": "should sort price high to low",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 4,
-                      "status": "passed",
-                      "duration": 1463,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-18T03:16:38.953Z",
+                      "timeout": 0,
                       "annotations": [],
-                      "attachments": []
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari",
+                      "projectName": "Mobile Safari",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 30993,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-14T12:39:45.844Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
                     }
                   ],
-                  "status": "expected"
+                  "id": "4a9f5a1bfed7ccb76b8d-155d5dafe5cedfda46ab",
+                  "file": "ui/products/products.spec.ts",
+                  "line": 90,
+                  "column": 9
                 }
-              ],
-              "id": "bbe9c3579c202181fc8e-8f296b55a32bc13d0c06",
-              "file": "ui/auth/loginWithDDT.spec.ts",
-              "line": 15,
-              "column": 9
-            },
-            {
-              "title": "User #2 - login test (locked_out_user)",
-              "ok": true,
-              "tags": [
-                "smoke"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 5,
-                      "parallelIndex": 5,
-                      "status": "passed",
-                      "duration": 1452,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-18T03:16:38.948Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "bbe9c3579c202181fc8e-7ba92e075af3b17722ec",
-              "file": "ui/auth/loginWithDDT.spec.ts",
-              "line": 15,
-              "column": 9
-            },
-            {
-              "title": "User #3 - login test (problem_user)",
-              "ok": true,
-              "tags": [
-                "smoke"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 6,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 1639,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-18T03:16:40.786Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "bbe9c3579c202181fc8e-6941a1fa2e529d3db767",
-              "file": "ui/auth/loginWithDDT.spec.ts",
-              "line": 15,
-              "column": 9
-            },
-            {
-              "title": "User #4 - login test (invalid_user)",
-              "ok": true,
-              "tags": [
-                "smoke"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 7,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 1515,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-18T03:16:40.791Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "bbe9c3579c202181fc8e-19c2d11f0572281e4258",
-              "file": "ui/auth/loginWithDDT.spec.ts",
-              "line": 15,
-              "column": 9
-            },
-            {
-              "title": "User #1 - login test (standard_user)",
-              "ok": true,
-              "tags": [
-                "smoke"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [
-                    {
-                      "workerIndex": 9,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 1344,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-18T03:16:40.810Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "bbe9c3579c202181fc8e-a68c389fb127b5df6b28",
-              "file": "ui/auth/loginWithDDT.spec.ts",
-              "line": 15,
-              "column": 9
-            },
-            {
-              "title": "User #2 - login test (locked_out_user)",
-              "ok": true,
-              "tags": [
-                "smoke"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [
-                    {
-                      "workerIndex": 8,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 1289,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-18T03:16:40.812Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "bbe9c3579c202181fc8e-b390a9de414726c4ee5c",
-              "file": "ui/auth/loginWithDDT.spec.ts",
-              "line": 15,
-              "column": 9
-            },
-            {
-              "title": "User #3 - login test (problem_user)",
-              "ok": true,
-              "tags": [
-                "smoke"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [
-                    {
-                      "workerIndex": 10,
-                      "parallelIndex": 4,
-                      "status": "passed",
-                      "duration": 1299,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-18T03:16:41.547Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "bbe9c3579c202181fc8e-e5568b99c9c2484c5a63",
-              "file": "ui/auth/loginWithDDT.spec.ts",
-              "line": 15,
-              "column": 9
-            },
-            {
-              "title": "User #4 - login test (invalid_user)",
-              "ok": true,
-              "tags": [
-                "smoke"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [
-                    {
-                      "workerIndex": 11,
-                      "parallelIndex": 5,
-                      "status": "passed",
-                      "duration": 1231,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-18T03:16:41.765Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "bbe9c3579c202181fc8e-92554057303feeebae3e",
-              "file": "ui/auth/loginWithDDT.spec.ts",
-              "line": 15,
-              "column": 9
-            },
-            {
-              "title": "User #1 - login test (standard_user)",
-              "ok": true,
-              "tags": [
-                "smoke"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 12,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 1062,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-18T03:16:42.596Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "bbe9c3579c202181fc8e-da063ffc82ea70cc3cd4",
-              "file": "ui/auth/loginWithDDT.spec.ts",
-              "line": 15,
-              "column": 9
-            },
-            {
-              "title": "User #2 - login test (locked_out_user)",
-              "ok": true,
-              "tags": [
-                "smoke"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 13,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 1049,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-18T03:16:42.631Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "bbe9c3579c202181fc8e-3ec19b20b49d2634693a",
-              "file": "ui/auth/loginWithDDT.spec.ts",
-              "line": 15,
-              "column": 9
-            },
-            {
-              "title": "User #3 - login test (problem_user)",
-              "ok": true,
-              "tags": [
-                "smoke"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 15,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 1116,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-18T03:16:43.385Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "bbe9c3579c202181fc8e-054901a8430e62603ef3",
-              "file": "ui/auth/loginWithDDT.spec.ts",
-              "line": 15,
-              "column": 9
-            },
-            {
-              "title": "User #4 - login test (invalid_user)",
-              "ok": true,
-              "tags": [
-                "smoke"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 14,
-                      "parallelIndex": 4,
-                      "status": "passed",
-                      "duration": 1114,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-18T03:16:43.315Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "bbe9c3579c202181fc8e-aa44b03d98d60ee23531",
-              "file": "ui/auth/loginWithDDT.spec.ts",
-              "line": 15,
-              "column": 9
-            },
-            {
-              "title": "User #1 - login test (standard_user)",
-              "ok": true,
-              "tags": [
-                "smoke"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
-                  "results": [
-                    {
-                      "workerIndex": 16,
-                      "parallelIndex": 5,
-                      "status": "passed",
-                      "duration": 1188,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-18T03:16:43.482Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "bbe9c3579c202181fc8e-55df1a879777744362a3",
-              "file": "ui/auth/loginWithDDT.spec.ts",
-              "line": 15,
-              "column": 9
-            },
-            {
-              "title": "User #2 - login test (locked_out_user)",
-              "ok": true,
-              "tags": [
-                "smoke"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
-                  "results": [
-                    {
-                      "workerIndex": 17,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 1217,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-18T03:16:43.897Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "bbe9c3579c202181fc8e-c95c7681153dba4eda70",
-              "file": "ui/auth/loginWithDDT.spec.ts",
-              "line": 15,
-              "column": 9
-            },
-            {
-              "title": "User #3 - login test (problem_user)",
-              "ok": true,
-              "tags": [
-                "smoke"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
-                  "results": [
-                    {
-                      "workerIndex": 18,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 1204,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-18T03:16:44.067Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "bbe9c3579c202181fc8e-bffde7001eb4d3552288",
-              "file": "ui/auth/loginWithDDT.spec.ts",
-              "line": 15,
-              "column": 9
-            },
-            {
-              "title": "User #4 - login test (invalid_user)",
-              "ok": true,
-              "tags": [
-                "smoke"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
-                  "results": [
-                    {
-                      "workerIndex": 19,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 1219,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-18T03:16:44.109Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "bbe9c3579c202181fc8e-4971ac887a6294396613",
-              "file": "ui/auth/loginWithDDT.spec.ts",
-              "line": 15,
-              "column": 9
+              ]
             }
           ]
         }
@@ -874,9 +333,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-18T03:16:38.606Z",
-    "duration": 6907.184,
-    "expected": 20,
+    "startTime": "2026-01-14T12:38:14.571Z",
+    "duration": 122442.279,
+    "expected": 5,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

@@ -18,7 +18,7 @@ test.describe('SauceDemo Checkout Tests', () => {
         cartPage = new CartPage(page);
         checkoutPage = new CheckoutPage(page);
         await loginPage.goto();
-        await loginPage.login('standard_user', 'secret_sauce');
+        await loginPage.login(process.env.SAUCEDEMO_STANDARD_USER!, process.env.SAUCEDEMO_PASSWORD!);
         await productsPage.addProductToCartByName('Sauce Labs Backpack');
         await productsPage.clickShoppingCart();
         await cartPage.clickCheckout();
@@ -57,9 +57,9 @@ test.describe('SauceDemo Checkout Tests', () => {
         });
     });
 
-
     // Form Field Validation
     test.describe('Form Field Validation', () => {
+
         test('should show error for missing first name', async () => {
             await checkoutPage.fillShippingInformation('', 'Doe', '12345');
             await checkoutPage.clickContinue();
@@ -117,7 +117,6 @@ test.describe('SauceDemo Checkout Tests', () => {
             expect(itemCount).toBe(1);
         });
 
-
         test('should persist form field data', async () => {
             await checkoutPage.firstNameInput.fill('John');
             await checkoutPage.lastNameInput.fill('Doe');
@@ -127,7 +126,6 @@ test.describe('SauceDemo Checkout Tests', () => {
             expect(lastName).toBe('Doe');
         });
     });
-
 
     // Checkout Overview
     test.describe('Checkout Overview', () => {

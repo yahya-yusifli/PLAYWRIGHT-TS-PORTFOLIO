@@ -1,5 +1,5 @@
 {
-  "name": "my-first-playwright-project",
+  "name": "playwright-project-pack",
   "version": "1.0.0",
   "description": "Learning Playwright basics",
   "main": "index.js",

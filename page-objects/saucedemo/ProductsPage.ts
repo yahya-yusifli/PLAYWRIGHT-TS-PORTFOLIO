@@ -21,17 +21,16 @@ export class ProductsPage extends BasePage {
     async goto() {
         await super.goto("/inventory.html");
     }
-    
 
-    async getProductCount(): Promise < number > {
+    async getProductCount(): Promise<number> {
         return await this.inventoryItems.count();
     }
 
-    async getProductNames(): Promise < string[] > {
+    async getProductNames(): Promise<string[]> {
         const items = await this.inventoryItems.all();
         const names: string[] = [];
 
-        for(const item of items) {
+        for (const item of items) {
             const name = await item.locator(".inventory_item_name").textContent();
             if (name) names.push(name);
         }
@@ -48,7 +47,7 @@ export class ProductsPage extends BasePage {
         await product.locator('button:has-text("Remove")').click();
     }
 
-    async getCartItemCount(): Promise < string > {
+    async getCartItemCount(): Promise<string> {
         try {
             return await this.shoppingCartBadge.textContent() || '0';
         } catch {
@@ -64,12 +63,18 @@ export class ProductsPage extends BasePage {
         await this.sortDropdown.selectOption(option);
     }
 
-    async getProductPrice(productName: string): Promise < string > {
+    async getProductPrice(productName: string): Promise<string> {
         const product = this.page.locator('.inventory_item', { hasText: productName });
         return await product.locator('.inventory_item_price').textContent() || '';
     }
+ 
+    async getAllPrices(): Promise<number[]> {
+        const priceElements = await this.page.locator('.inventory_item_price').allInnerTexts();
+        // Convert "$7.99" strings into numbers like 7.99
+        return priceElements.map(price => parseFloat(price.replace('$', '')));
+    }
 
-    async isProductInCart(productName: string): Promise < boolean > {
+    async isProductInCart(productName: string): Promise<boolean> {
         const product = this.page.locator('.inventory_item', { hasText: productName });
         const removeButton = product.locator('button:has-text("Remove")');
         return await removeButton.isVisible();
