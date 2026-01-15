@@ -1,38 +1,31 @@
-import { test, expect } from '@playwright/test';
-import { LoginPage } from '../../../page-objects/saucedemo/LoginPage';
+import { test, expect } from '../../fixtures/auth-fixtures';
 import { ProductsPage } from '../../../page-objects/saucedemo/ProductsPage';
 import { CartPage } from '../../../page-objects/saucedemo/CartPage';
 import { CheckoutPage } from '../../../page-objects/saucedemo/CheckoutPage';
 
 
 test.describe('SauceDemo Checkout Tests', () => {
-    let loginPage: LoginPage;
     let productsPage: ProductsPage;
     let cartPage: CartPage;
     let checkoutPage: CheckoutPage;
 
-
-    test.beforeEach(async ({ page }) => {
-        loginPage = new LoginPage(page);
+    test.beforeEach(async ({ page,loggedInAsStandardUser }) => {
         productsPage = new ProductsPage(page);
         cartPage = new CartPage(page);
         checkoutPage = new CheckoutPage(page);
-        await loginPage.goto();
-        await loginPage.login(process.env.SAUCEDEMO_STANDARD_USER!, process.env.SAUCEDEMO_PASSWORD!);
         await productsPage.addProductToCartByName('Sauce Labs Backpack');
         await productsPage.clickShoppingCart();
         await cartPage.clickCheckout();
     });
 
-
     // Valid Checkout Information
     test.describe('Valid Checkout Information', () => {
+
         test('should complete with valid data', async ({ page }) => {
             await checkoutPage.fillShippingInformation('John', 'Doe', '12345');
             await checkoutPage.clickContinue();
             await expect(page).toHaveURL(/.*checkout-step-two.html/);
         });
-
 
         test('should fill fields separately', async ({ page }) => {
             await checkoutPage.firstNameInput.fill('John');
@@ -42,13 +35,11 @@ test.describe('SauceDemo Checkout Tests', () => {
             await expect(page).toHaveURL(/.*checkout-step-two.html/);
         });
 
-
         test('should accept special characters in names', async ({ page }) => {
             await checkoutPage.fillShippingInformation('John-Paul', "O'Connor", '12345');
             await checkoutPage.clickContinue();
             await expect(page).toHaveURL(/.*checkout-step-two.html/);
         });
-
 
         test('should accept various postal code formats', async ({ page }) => {
             await checkoutPage.fillShippingInformation('John', 'Doe', 'ABC123');
@@ -68,7 +59,6 @@ test.describe('SauceDemo Checkout Tests', () => {
             expect(error).toContain('First Name is required');
         });
 
-
         test('should show error for missing last name', async () => {
             await checkoutPage.fillShippingInformation('John', '', '12345');
             await checkoutPage.clickContinue();
@@ -76,7 +66,6 @@ test.describe('SauceDemo Checkout Tests', () => {
             const error = await checkoutPage.getErrorMessage();
             expect(error).toContain('Last Name is required');
         });
-
 
         test('should show error for missing postal code', async () => {
             await checkoutPage.fillShippingInformation('John', 'Doe', '');
@@ -86,12 +75,11 @@ test.describe('SauceDemo Checkout Tests', () => {
             expect(error).toContain('Postal Code is required');
         });
 
-
         test('should show error for all fields empty', async () => {
             await checkoutPage.clickContinue();
             await expect(checkoutPage.errorMessage).toBeVisible();
+            await expect(checkoutPage.errorMessage).toHaveText('Error: First Name is required');
         });
-
 
         test('should dismiss error message', async ({ page }) => {
             await checkoutPage.clickContinue();
@@ -101,20 +89,18 @@ test.describe('SauceDemo Checkout Tests', () => {
         });
     });
 
-
     // Checkout Navigation
     test.describe('Checkout Navigation', () => {
+
         test('should cancel from checkout', async ({ page }) => {
             await page.locator('#cancel').click();
             await expect(page).toHaveURL(/.*cart.html/);
         });
 
-
         test('should go back to cart', async ({ page }) => {
             await page.locator('#cancel').click();
             await expect(page).toHaveURL(/.*cart.html/);
-            const itemCount = await cartPage.getCartItemCount();
-            expect(itemCount).toBe(1);
+            await expect(cartPage.cartItems).toHaveCount(1);
         });
 
         test('should persist form field data', async () => {

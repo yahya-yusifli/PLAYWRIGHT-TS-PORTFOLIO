@@ -1,20 +1,14 @@
-import { test, expect } from '@playwright/test';
-import { LoginPage } from '../../../page-objects/saucedemo/LoginPage';
+import { test, expect } from '../../fixtures/auth-fixtures';
 import { ProductsPage } from '../../../page-objects/saucedemo/ProductsPage';
 import { SortOption } from '../../../utils/saucedemo-data';
 
 
 test.describe('SauceDemo Product Tests', () => {
 
-  let loginPage: LoginPage;
   let productsPage: ProductsPage;
 
-
-  test.beforeEach(async ({ page }) => {
-    loginPage = new LoginPage(page);
+  test.beforeEach(async ({ page,loggedInAsStandardUser }) => {
     productsPage = new ProductsPage(page);
-    await loginPage.goto();
-    await loginPage.login(process.env.SAUCEDEMO_STANDARD_USER!, process.env.SAUCEDEMO_PASSWORD!);
   });
 
 

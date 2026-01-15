@@ -1,21 +1,16 @@
-import { test, expect } from '@playwright/test';
-import { LoginPage } from '../../../page-objects/saucedemo/LoginPage';
+import { test, expect } from '../../fixtures/auth-fixtures'
 import { ProductsPage } from '../../../page-objects/saucedemo/ProductsPage';
 import { CartPage } from '../../../page-objects/saucedemo/CartPage';
 
 
 test.describe('SauceDemo Cart Tests', () => {
 
-  let loginPage: LoginPage;
   let productsPage: ProductsPage;
   let cartPage: CartPage;
 
-  test.beforeEach(async ({ page }) => {
-    loginPage = new LoginPage(page);
+  test.beforeEach(async ({ page,loggedInAsStandardUser }) => {
     productsPage = new ProductsPage(page);
     cartPage = new CartPage(page);
-    await loginPage.goto();
-    await loginPage.login(process.env.SAUCEDEMO_STANDARD_USER!, process.env.SAUCEDEMO_PASSWORD!);
   });
 
   // Add Items to Cart
@@ -49,6 +44,7 @@ test.describe('SauceDemo Cart Tests', () => {
 
   // Remove Items from Cart
   test.describe('Remove Items from Cart', () => {
+
     test('should remove from products page', async () => {
       await productsPage.addProductToCartByName('Sauce Labs Backpack');
       await productsPage.removeProductFromCartByName('Sauce Labs Backpack');
@@ -91,6 +87,7 @@ test.describe('SauceDemo Cart Tests', () => {
 
   // Cart Navigation
   test.describe('Cart Navigation', () => {
+
     test('should navigate to cart from products', async ({ page }) => {
       await productsPage.clickShoppingCart();
       await expect(page).toHaveURL(/.*cart.html/);
@@ -101,6 +98,7 @@ test.describe('SauceDemo Cart Tests', () => {
       await productsPage.clickShoppingCart();
       await cartPage.continueShopping();
       await expect(page).toHaveURL(/.*inventory.html/);
+      await expect(cartPage.pageTitle).toHaveText('Products');
     });
 
     test('should navigate back and forth', async ({ page }) => {
@@ -115,6 +113,7 @@ test.describe('SauceDemo Cart Tests', () => {
 
   // Cart Calculations
   test.describe('Cart Calculations', () => {
+
     test('should calculate single item total', async () => {
       await productsPage.addProductToCartByName('Sauce Labs Backpack');
       const price = await productsPage.getProductPrice('Sauce Labs Backpack');
@@ -143,6 +142,7 @@ test.describe('SauceDemo Cart Tests', () => {
 
   // Cart Item Details
   test.describe('Cart Item Details', () => {
+
     test('should display item details correctly', async () => {
       await productsPage.addProductToCartByName('Sauce Labs Backpack');
       await productsPage.clickShoppingCart();
@@ -162,6 +162,7 @@ test.describe('SauceDemo Cart Tests', () => {
 
   // Empty Cart Scenarios
   test.describe('Empty Cart Scenarios', () => {
+
     test('should display empty cart correctly', async () => {
       await productsPage.clickShoppingCart();
       const itemCount = await cartPage.getCartItemCount();
@@ -186,6 +187,7 @@ test.describe('SauceDemo Cart Tests', () => {
 
   // Cart Persistence
   test.describe('Cart Persistence', () => {
+
     test('should maintain items across navigation', async () => {
       await productsPage.addProductToCartByName('Sauce Labs Backpack');
       await productsPage.clickShoppingCart();
@@ -200,6 +202,7 @@ test.describe('SauceDemo Cart Tests', () => {
 
   // Verification Methods
   test.describe('Verification Methods', () => {
+
     test('should verify product in cart', async () => {
       await productsPage.addProductToCartByName('Sauce Labs Backpack');
       await productsPage.clickShoppingCart();
@@ -219,19 +222,25 @@ test.describe('SauceDemo Cart Tests', () => {
 
   // Cart Display Details
   test.describe('Cart Display Details', () => {
+
     test('should show quantity for multiple items', async ({ page }) => {
       await productsPage.addProductToCartByName('Sauce Labs Backpack');
+      await productsPage.addProductToCartByName('Sauce Labs Bike Light');
       await productsPage.clickShoppingCart();
-      const qty = await page.locator('.cart_quantity').textContent();
-      expect(qty).toBe('1');
+
+      const quantities = page.locator('.cart_quantity');
+
+      await expect(quantities).toHaveCount(2);
+      await expect(quantities.first()).toHaveText('1');
+      await expect(quantities.nth(1)).toHaveText('1');
     });
 
     test('should display product descriptions', async ({ page }) => {
       await productsPage.addProductToCartByName('Sauce Labs Backpack');
       await productsPage.addProductToCartByName('Sauce Labs Bike Light');
       await productsPage.clickShoppingCart();
-      const descriptions = await page.locator('.inventory_item_desc').all();
-      expect(descriptions.length).toBe(2);
+      const descriptions = page.locator('.inventory_item_desc');
+      expect(descriptions).toHaveCount(2);
     });
   });
 });

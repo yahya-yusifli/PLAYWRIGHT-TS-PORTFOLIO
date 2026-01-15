@@ -9,9 +9,9 @@
     "globalTimeout": 0,
     "grep": {},
     "grepInvert": null,
-    "maxFailures": 1,
+    "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 6
     },
     "preserveOutput": "always",
     "reporter": [
@@ -49,7 +49,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 6
         },
         "id": "chromium",
         "name": "chromium",
@@ -58,14 +58,14 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 0
+        "timeout": 30000
       },
       {
         "outputDir": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/Playwright-TypeScript-Portfolio/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 6
         },
         "id": "firefox",
         "name": "firefox",
@@ -74,14 +74,14 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 0
+        "timeout": 30000
       },
       {
         "outputDir": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/Playwright-TypeScript-Portfolio/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 6
         },
         "id": "webkit",
         "name": "webkit",
@@ -90,14 +90,14 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 0
+        "timeout": 30000
       },
       {
         "outputDir": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/Playwright-TypeScript-Portfolio/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 6
         },
         "id": "Mobile Chrome",
         "name": "Mobile Chrome",
@@ -106,14 +106,14 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 0
+        "timeout": 30000
       },
       {
         "outputDir": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/Playwright-TypeScript-Portfolio/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 6
         },
         "id": "Mobile Safari",
         "name": "Mobile Safari",
@@ -122,7 +122,7 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 0
+        "timeout": 30000
       }
     ],
     "shard": null,
@@ -130,37 +130,37 @@
     "updateSnapshots": "missing",
     "updateSourceMethod": "patch",
     "version": "1.57.0",
-    "workers": 1,
+    "workers": 6,
     "webServer": null
   },
   "suites": [
     {
-      "title": "ui/products/products.spec.ts",
-      "file": "ui/products/products.spec.ts",
+      "title": "ui/auth/login.spec.ts",
+      "file": "ui/auth/login.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "SauceDemo Product Tests",
-          "file": "ui/products/products.spec.ts",
-          "line": 7,
+          "title": "SauceDemo Login Tests",
+          "file": "ui/auth/login.spec.ts",
+          "line": 6,
           "column": 6,
           "specs": [],
           "suites": [
             {
-              "title": "Sorting Functionality",
-              "file": "ui/products/products.spec.ts",
-              "line": 61,
+              "title": "Valid Login Scenarios",
+              "file": "ui/auth/login.spec.ts",
+              "line": 18,
               "column": 8,
               "specs": [
                 {
-                  "title": "should sort price high to low",
+                  "title": "should login with standard user",
                   "ok": true,
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 0,
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "chromium",
@@ -170,12 +170,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 29522,
+                          "duration": 2251,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-01-14T12:38:14.809Z",
+                          "startTime": "2026-01-15T12:25:40.840Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -183,33 +183,169 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "4a9f5a1bfed7ccb76b8d-cb58854b9a5a81dec3ee",
-                  "file": "ui/products/products.spec.ts",
-                  "line": 90,
+                  "id": "a2d96d947731fd09b1cd-c6166b20a9786cb199d5",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 20,
                   "column": 9
                 },
                 {
-                  "title": "should sort price high to low",
+                  "title": "should login with performance glitch user",
                   "ok": true,
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 0,
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 7272,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:25:40.838Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-d837093bfff2e75126a1",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 27,
+                  "column": 9
+                },
+                {
+                  "title": "should login with problem user",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 2333,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:25:40.837Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-ffd73c161a412aa07ca5",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 34,
+                  "column": 9
+                },
+                {
+                  "title": "should login with visual user",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 2245,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:25:40.837Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-2860360d5e4ebdfb519f",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 41,
+                  "column": 9
+                },
+                {
+                  "title": "should login with error user",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 4,
+                          "status": "passed",
+                          "duration": 2221,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:25:40.840Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-f15f50d63507cf8be5d6",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 47,
+                  "column": 9
+                },
+                {
+                  "title": "should login with standard user",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "firefox",
                       "projectName": "firefox",
                       "results": [
                         {
-                          "workerIndex": 1,
-                          "parallelIndex": 0,
+                          "workerIndex": 6,
+                          "parallelIndex": 2,
                           "status": "passed",
-                          "duration": 42374,
+                          "duration": 2537,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-01-14T12:38:44.925Z",
+                          "startTime": "2026-01-15T12:25:45.758Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -217,33 +353,169 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "4a9f5a1bfed7ccb76b8d-f7dd98dfe8060a0fb84e",
-                  "file": "ui/products/products.spec.ts",
-                  "line": 90,
+                  "id": "a2d96d947731fd09b1cd-010d8f9b2f018c22600f",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 20,
                   "column": 9
                 },
                 {
-                  "title": "should sort price high to low",
+                  "title": "should login with performance glitch user",
                   "ok": true,
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 0,
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 7,
+                          "parallelIndex": 5,
+                          "status": "passed",
+                          "duration": 7377,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:25:45.858Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-b6e394f9a26d12d2076a",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 27,
+                  "column": 9
+                },
+                {
+                  "title": "should login with problem user",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 8,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 2421,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:25:47.760Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-64e640574de54ed11ab3",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 34,
+                  "column": 9
+                },
+                {
+                  "title": "should login with visual user",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 9,
+                          "parallelIndex": 4,
+                          "status": "passed",
+                          "duration": 2480,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:25:47.761Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-279e6561f4cd20f6fbf1",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 41,
+                  "column": 9
+                },
+                {
+                  "title": "should login with error user",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 10,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2420,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:25:48.542Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-8e4cb1287d9597ba9d51",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 47,
+                  "column": 9
+                },
+                {
+                  "title": "should login with standard user",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "webkit",
                       "projectName": "webkit",
                       "results": [
                         {
-                          "workerIndex": 2,
-                          "parallelIndex": 0,
+                          "workerIndex": 12,
+                          "parallelIndex": 3,
                           "status": "passed",
-                          "duration": 12593,
+                          "duration": 2543,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-01-14T12:39:28.239Z",
+                          "startTime": "2026-01-15T12:25:53.400Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -251,33 +523,169 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "4a9f5a1bfed7ccb76b8d-377e188c559ff2103aa5",
-                  "file": "ui/products/products.spec.ts",
-                  "line": 90,
+                  "id": "a2d96d947731fd09b1cd-0d6048125ff5a8d675eb",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 20,
                   "column": 9
                 },
                 {
-                  "title": "should sort price high to low",
+                  "title": "should login with performance glitch user",
                   "ok": true,
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 0,
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 13,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 7484,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:25:54.014Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-0a883d893143dd7805fb",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 27,
+                  "column": 9
+                },
+                {
+                  "title": "should login with problem user",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 14,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 2556,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:25:54.181Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-a04571b7dc781652d568",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 34,
+                  "column": 9
+                },
+                {
+                  "title": "should login with visual user",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 15,
+                          "parallelIndex": 5,
+                          "status": "passed",
+                          "duration": 2511,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:25:54.475Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-286f472a1321bda1c2bd",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 41,
+                  "column": 9
+                },
+                {
+                  "title": "should login with error user",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 16,
+                          "parallelIndex": 4,
+                          "status": "passed",
+                          "duration": 2478,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:25:55.300Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-99cef5daa994df8b2b21",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 47,
+                  "column": 9
+                },
+                {
+                  "title": "should login with standard user",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "Mobile Chrome",
                       "projectName": "Mobile Chrome",
                       "results": [
                         {
-                          "workerIndex": 3,
-                          "parallelIndex": 0,
+                          "workerIndex": 18,
+                          "parallelIndex": 4,
                           "status": "passed",
-                          "duration": 4076,
+                          "duration": 2171,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-01-14T12:39:41.270Z",
+                          "startTime": "2026-01-15T12:26:00.526Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -285,33 +693,169 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "4a9f5a1bfed7ccb76b8d-403d815c6d4dcf6641e8",
-                  "file": "ui/products/products.spec.ts",
-                  "line": 90,
+                  "id": "a2d96d947731fd09b1cd-72f540a9eb8e18baa314",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 20,
                   "column": 9
                 },
                 {
-                  "title": "should sort price high to low",
+                  "title": "should login with performance glitch user",
                   "ok": true,
                   "tags": [],
                   "tests": [
                     {
-                      "timeout": 0,
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 19,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 7135,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:26:00.964Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-f013918983a84160db03",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 27,
+                  "column": 9
+                },
+                {
+                  "title": "should login with problem user",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 20,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 2113,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:26:01.044Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-e569ff50f728133a58b7",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 34,
+                  "column": 9
+                },
+                {
+                  "title": "should login with visual user",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 21,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 2148,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:26:01.753Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-6ece3c40e48e9926408b",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 41,
+                  "column": 9
+                },
+                {
+                  "title": "should login with error user",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 22,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2377,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:26:01.949Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-72ee3f0bc280f5d10c52",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 47,
+                  "column": 9
+                },
+                {
+                  "title": "should login with standard user",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
                       "annotations": [],
                       "expectedStatus": "passed",
                       "projectId": "Mobile Safari",
                       "projectName": "Mobile Safari",
                       "results": [
                         {
-                          "workerIndex": 4,
-                          "parallelIndex": 0,
+                          "workerIndex": 24,
+                          "parallelIndex": 5,
                           "status": "passed",
-                          "duration": 30993,
+                          "duration": 2524,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-01-14T12:39:45.844Z",
+                          "startTime": "2026-01-15T12:26:06.558Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -319,9 +863,1691 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "4a9f5a1bfed7ccb76b8d-155d5dafe5cedfda46ab",
-                  "file": "ui/products/products.spec.ts",
-                  "line": 90,
+                  "id": "a2d96d947731fd09b1cd-2d520bdb293a66b5b6de",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 20,
+                  "column": 9
+                },
+                {
+                  "title": "should login with performance glitch user",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari",
+                      "projectName": "Mobile Safari",
+                      "results": [
+                        {
+                          "workerIndex": 25,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 7506,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:26:06.777Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-c7d54c48343b2dacdd9b",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 27,
+                  "column": 9
+                },
+                {
+                  "title": "should login with problem user",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari",
+                      "projectName": "Mobile Safari",
+                      "results": [
+                        {
+                          "workerIndex": 26,
+                          "parallelIndex": 4,
+                          "status": "passed",
+                          "duration": 2502,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:26:07.263Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-1b7e4be5935f7edb0bf0",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 34,
+                  "column": 9
+                },
+                {
+                  "title": "should login with visual user",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari",
+                      "projectName": "Mobile Safari",
+                      "results": [
+                        {
+                          "workerIndex": 27,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 2488,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:26:07.566Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-d5c50297b1aacf4b6029",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 41,
+                  "column": 9
+                },
+                {
+                  "title": "should login with error user",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari",
+                      "projectName": "Mobile Safari",
+                      "results": [
+                        {
+                          "workerIndex": 28,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 2557,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:26:08.453Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-4ae75464ad5716f5fe79",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 47,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Invalid Credentials Handling",
+              "file": "ui/auth/login.spec.ts",
+              "line": 55,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should show error for locked out user",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 5,
+                          "parallelIndex": 5,
+                          "status": "passed",
+                          "duration": 2434,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:25:40.825Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-36dad1098eb3a4185abc",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 57,
+                  "column": 9
+                },
+                {
+                  "title": "should show error for invalid username",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 4,
+                          "status": "passed",
+                          "duration": 2047,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:25:43.295Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-5c3339732ee17960564a",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 64,
+                  "column": 9
+                },
+                {
+                  "title": "should show error for invalid password",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2059,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:25:43.314Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-12b5577ecdfd878f6595",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 71,
+                  "column": 9
+                },
+                {
+                  "title": "should handle wrong username format",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 2076,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:25:43.318Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-ce06b204ced0be70fbb5",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 78,
+                  "column": 9
+                },
+                {
+                  "title": "should reject SQL injection attempts",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 2066,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:25:43.402Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-62fde388f5654c06daf6",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 83,
+                  "column": 9
+                },
+                {
+                  "title": "should reject XSS attempts",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 5,
+                          "parallelIndex": 5,
+                          "status": "passed",
+                          "duration": 2062,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:25:43.509Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-dadd990e56812fe1a8f2",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 88,
+                  "column": 9
+                },
+                {
+                  "title": "should be case sensitive",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 4,
+                          "status": "passed",
+                          "duration": 2120,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:25:45.350Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-6b491d2b1e2aa1fd8e94",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 93,
+                  "column": 9
+                },
+                {
+                  "title": "should show error for locked out user",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 11,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 2348,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:25:48.668Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-65661ef52bbe8f55371a",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 57,
+                  "column": 9
+                },
+                {
+                  "title": "should show error for invalid username",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 6,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 1919,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:25:48.795Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-daae40a27990c7b4bcf2",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 64,
+                  "column": 9
+                },
+                {
+                  "title": "should show error for invalid password",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 9,
+                          "parallelIndex": 4,
+                          "status": "passed",
+                          "duration": 2061,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:25:50.638Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-c4dacc962ba54038f89e",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 71,
+                  "column": 9
+                },
+                {
+                  "title": "should handle wrong username format",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 6,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 2050,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:25:50.722Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-7b07943f8ea4b7ee071f",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 78,
+                  "column": 9
+                },
+                {
+                  "title": "should reject SQL injection attempts",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 8,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 2010,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:25:50.863Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-2ed9c6c2b6b3991adb1f",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 83,
+                  "column": 9
+                },
+                {
+                  "title": "should reject XSS attempts",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 10,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2049,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:25:51.391Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-ee66a3daa765c8139ba2",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 88,
+                  "column": 9
+                },
+                {
+                  "title": "should be case sensitive",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 11,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 2034,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:25:51.587Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-169de3c58303dddc5c59",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 93,
+                  "column": 9
+                },
+                {
+                  "title": "should show error for locked out user",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 17,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 2761,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:25:55.484Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-13a480cbeed4cf4dbc64",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 57,
+                  "column": 9
+                },
+                {
+                  "title": "should show error for invalid username",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 12,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 2337,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:25:56.074Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-c53757268af2eb66650c",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 64,
+                  "column": 9
+                },
+                {
+                  "title": "should show error for invalid password",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 14,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 2252,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:25:56.900Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-4b932f42e13637a136e5",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 71,
+                  "column": 9
+                },
+                {
+                  "title": "should handle wrong username format",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 15,
+                          "parallelIndex": 5,
+                          "status": "passed",
+                          "duration": 2356,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:25:57.119Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-5fc0cf9eb693d4f58445",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 78,
+                  "column": 9
+                },
+                {
+                  "title": "should reject SQL injection attempts",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 16,
+                          "parallelIndex": 4,
+                          "status": "passed",
+                          "duration": 2331,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:25:57.906Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-0d52f037b0e57f8ddb50",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 83,
+                  "column": 9
+                },
+                {
+                  "title": "should reject XSS attempts",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 17,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 2261,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:25:58.396Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-a814cccb096ca79b665d",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 88,
+                  "column": 9
+                },
+                {
+                  "title": "should be case sensitive",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 12,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 2321,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:25:58.420Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-c8d1815ac290b8b4d03c",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 93,
+                  "column": 9
+                },
+                {
+                  "title": "should show error for locked out user",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 23,
+                          "parallelIndex": 5,
+                          "status": "passed",
+                          "duration": 2014,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:26:02.168Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-fb2bc1b1cc60aead685a",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 57,
+                  "column": 9
+                },
+                {
+                  "title": "should show error for invalid username",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 18,
+                          "parallelIndex": 4,
+                          "status": "passed",
+                          "duration": 2064,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:26:02.798Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-a70138f9a98f27a00ccf",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 64,
+                  "column": 9
+                },
+                {
+                  "title": "should show error for invalid password",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 20,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 1994,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:26:03.257Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-38728eb443dbefc19c23",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 71,
+                  "column": 9
+                },
+                {
+                  "title": "should handle wrong username format",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 21,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 2039,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:26:04.006Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-facb0fecea37610de842",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 78,
+                  "column": 9
+                },
+                {
+                  "title": "should reject SQL injection attempts",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 23,
+                          "parallelIndex": 5,
+                          "status": "passed",
+                          "duration": 2009,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:26:04.268Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-8a3e817281b2dfa993b8",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 83,
+                  "column": 9
+                },
+                {
+                  "title": "should reject XSS attempts",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 22,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2047,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:26:04.430Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-05e975ef46da8127c0fc",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 88,
+                  "column": 9
+                },
+                {
+                  "title": "should be case sensitive",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 18,
+                          "parallelIndex": 4,
+                          "status": "passed",
+                          "duration": 2060,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:26:04.869Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-e8d88856961b60ea7f75",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 93,
+                  "column": 9
+                },
+                {
+                  "title": "should show error for locked out user",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari",
+                      "projectName": "Mobile Safari",
+                      "results": [
+                        {
+                          "workerIndex": 29,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 2534,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:26:08.481Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-b10080c6c7b5725db0fc",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 57,
+                  "column": 9
+                },
+                {
+                  "title": "should show error for invalid username",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari",
+                      "projectName": "Mobile Safari",
+                      "results": [
+                        {
+                          "workerIndex": 24,
+                          "parallelIndex": 5,
+                          "status": "passed",
+                          "duration": 2291,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:26:09.212Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-459ba7de63e3b147d186",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 64,
+                  "column": 9
+                },
+                {
+                  "title": "should show error for invalid password",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari",
+                      "projectName": "Mobile Safari",
+                      "results": [
+                        {
+                          "workerIndex": 26,
+                          "parallelIndex": 4,
+                          "status": "passed",
+                          "duration": 2343,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:26:09.898Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-f3e7bb770c5d84c75db1",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 71,
+                  "column": 9
+                },
+                {
+                  "title": "should handle wrong username format",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari",
+                      "projectName": "Mobile Safari",
+                      "results": [
+                        {
+                          "workerIndex": 27,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 2281,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:26:10.197Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-61327e8f0dc3b6df0586",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 78,
+                  "column": 9
+                },
+                {
+                  "title": "should reject SQL injection attempts",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari",
+                      "projectName": "Mobile Safari",
+                      "results": [
+                        {
+                          "workerIndex": 29,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 2355,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:26:11.149Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-75e9429590b21ce52d11",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 83,
+                  "column": 9
+                },
+                {
+                  "title": "should reject XSS attempts",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari",
+                      "projectName": "Mobile Safari",
+                      "results": [
+                        {
+                          "workerIndex": 28,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 2512,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:26:11.159Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-bf718431bd4ed82d7ad6",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 88,
+                  "column": 9
+                },
+                {
+                  "title": "should be case sensitive",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari",
+                      "projectName": "Mobile Safari",
+                      "results": [
+                        {
+                          "workerIndex": 24,
+                          "parallelIndex": 5,
+                          "status": "passed",
+                          "duration": 2278,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:26:11.511Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-2242b5fb9a045fbfb954",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 93,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Empty Field Validation",
+              "file": "ui/auth/login.spec.ts",
+              "line": 100,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should show error for empty username",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2845,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:25:45.382Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-53c8f37085b7a3ba263f",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 102,
+                  "column": 9
+                },
+                {
+                  "title": "should show error for empty password",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 2065,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:25:45.406Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-f4fd435b2ad1767426f0",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 109,
+                  "column": 9
+                },
+                {
+                  "title": "should show error for empty username",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 9,
+                          "parallelIndex": 4,
+                          "status": "passed",
+                          "duration": 2043,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:25:52.707Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-7a1cfc4f34d83e59a1b9",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 102,
+                  "column": 9
+                },
+                {
+                  "title": "should show error for empty password",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 6,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 2155,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:25:52.779Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-312c2b6a43814fafcc9e",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 109,
+                  "column": 9
+                },
+                {
+                  "title": "should show error for empty username",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 14,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 2294,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:25:59.158Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-7a426aa1592e46529e04",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 102,
+                  "column": 9
+                },
+                {
+                  "title": "should show error for empty password",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 15,
+                          "parallelIndex": 5,
+                          "status": "passed",
+                          "duration": 2368,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:25:59.482Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-db6f49af49aa989ce8ed",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 109,
+                  "column": 9
+                },
+                {
+                  "title": "should show error for empty username",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 20,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 2003,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:26:05.259Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-919ccfcc9516171111fe",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 102,
+                  "column": 9
+                },
+                {
+                  "title": "should show error for empty password",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 21,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 2111,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:26:06.052Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-c72d4c0c5881b012edfe",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 109,
+                  "column": 9
+                },
+                {
+                  "title": "should show error for empty username",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari",
+                      "projectName": "Mobile Safari",
+                      "results": [
+                        {
+                          "workerIndex": 26,
+                          "parallelIndex": 4,
+                          "status": "passed",
+                          "duration": 2294,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:26:12.248Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-87eecd7754d1a3873aa5",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 102,
+                  "column": 9
+                },
+                {
+                  "title": "should show error for empty password",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari",
+                      "projectName": "Mobile Safari",
+                      "results": [
+                        {
+                          "workerIndex": 27,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 2202,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T12:26:12.486Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a2d96d947731fd09b1cd-2f5d3be40c710b9f3c2f",
+                  "file": "ui/auth/login.spec.ts",
+                  "line": 109,
                   "column": 9
                 }
               ]
@@ -333,9 +2559,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-14T12:38:14.571Z",
-    "duration": 122442.279,
-    "expected": 5,
+    "startTime": "2026-01-15T12:25:40.491Z",
+    "duration": 34218.843,
+    "expected": 70,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

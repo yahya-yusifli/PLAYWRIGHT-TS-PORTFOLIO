@@ -4,7 +4,7 @@ dotenv.config();
 
 export const SauceDemoUsers = {
   standard: {
-    username: process.env.SAUCEDEMO_STANDARD_USER,
+    username: process.env.SAUCEDEMO_STANDARD_USER ,
     password: process.env.SAUCEDEMO_PASSWORD,
   },
   locked: {

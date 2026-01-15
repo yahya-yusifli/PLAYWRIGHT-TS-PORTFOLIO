@@ -8,7 +8,6 @@ test.describe('SauceDemo Login Tests', () => {
   let loginPage: LoginPage;
   let productsPage: ProductsPage;
 
-
   test.beforeEach(async ({ page }) => {
     loginPage = new LoginPage(page);
     productsPage = new ProductsPage(page);
@@ -77,7 +76,7 @@ test.describe('SauceDemo Login Tests', () => {
     });
 
     test('should handle wrong username format', async () => {
-      await loginPage.login('user@domain.com', process.env.SAUCEDEMO_PASSWORD!);
+      await loginPage.login('user@domain.com', 'secret_sauce');
       await expect(loginPage.errorMessage).toBeVisible();
     });
 
@@ -87,7 +86,7 @@ test.describe('SauceDemo Login Tests', () => {
     });
 
     test('should reject XSS attempts', async () => {
-      await loginPage.login('<script>alert("XSS")</script>', process.env.SAUCEDEMO_PASSWORD!);
+      await loginPage.login('<script>alert("XSS")</script>', 'secret_sauce');
       await expect(loginPage.errorMessage).toBeVisible();
     });
 
