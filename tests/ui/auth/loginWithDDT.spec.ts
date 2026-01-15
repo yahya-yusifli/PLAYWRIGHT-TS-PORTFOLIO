@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { LoginPage } from '../../../page-objects/saucedemo/LoginPage';
-import { SauceDemoUsers } from '../../../utils/test-data';
+import { SauceDemoUsers } from '../../../test-data/users';
 
 const testUsers = [
     { username: SauceDemoUsers.standard.username, password: SauceDemoUsers.standard.password, shouldSucceed: true },

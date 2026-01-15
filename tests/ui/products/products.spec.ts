@@ -1,6 +1,6 @@
 import { test, expect } from '../../fixtures/auth-fixtures';
 import { ProductsPage } from '../../../page-objects/saucedemo/ProductsPage';
-import { SortOption } from '../../../utils/saucedemo-data';
+import { SortOption } from '../../../test-data/saucedemo-data';
 
 
 test.describe('SauceDemo Product Tests', () => {

@@ -1,6 +1,6 @@
 import { test as base, Page, expect } from '@playwright/test';
 import { LoginPage } from '../../page-objects/saucedemo/LoginPage';
-import { SauceDemoUsers } from '../../utils/test-data';
+import { SauceDemoUsers } from '../../test-data/users';
 
 type AuthFixtures = {
     loginPage: LoginPage;

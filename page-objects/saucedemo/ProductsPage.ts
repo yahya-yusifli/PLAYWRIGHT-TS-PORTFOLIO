@@ -1,6 +1,6 @@
 import { Page, Locator } from "@playwright/test";
 import { BasePage } from "../shared/BasePage";
-import { SortOption } from "../../utils/saucedemo-data";
+import { SortOption } from "../../test-data/saucedemo-data";
 
 export class ProductsPage extends BasePage {
     readonly pageTitle: Locator;
