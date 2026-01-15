@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/Playwright-TypeScript-Portfolio/playwright.config.ts",
-    "rootDir": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/Playwright-TypeScript-Portfolio/tests",
+    "configFile": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/PLAYWRIGHT-TS-PORTFOLIO/playwright.config.ts",
+    "rootDir": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/PLAYWRIGHT-TS-PORTFOLIO/tests",
     "forbidOnly": false,
     "fullyParallel": true,
     "globalSetup": null,
@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 6
+      "actualWorkers": 5
     },
     "preserveOutput": "always",
     "reporter": [
@@ -30,7 +30,7 @@
         }
       ],
       [
-        "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/Playwright-TypeScript-Portfolio/node_modules/allure-playwright/dist/cjs/index.js",
+        "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/PLAYWRIGHT-TS-PORTFOLIO/node_modules/allure-playwright/dist/cjs/index.js",
         {
           "detail": true,
           "outputFolder": "allure-results",
@@ -45,15 +45,15 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/Playwright-TypeScript-Portfolio/test-results",
+        "outputDir": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/PLAYWRIGHT-TS-PORTFOLIO/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 6
+          "actualWorkers": 5
         },
         "id": "chromium",
         "name": "chromium",
-        "testDir": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/Playwright-TypeScript-Portfolio/tests",
+        "testDir": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/PLAYWRIGHT-TS-PORTFOLIO/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -61,15 +61,15 @@
         "timeout": 30000
       },
       {
-        "outputDir": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/Playwright-TypeScript-Portfolio/test-results",
+        "outputDir": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/PLAYWRIGHT-TS-PORTFOLIO/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 6
+          "actualWorkers": 5
         },
         "id": "firefox",
         "name": "firefox",
-        "testDir": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/Playwright-TypeScript-Portfolio/tests",
+        "testDir": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/PLAYWRIGHT-TS-PORTFOLIO/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -77,15 +77,15 @@
         "timeout": 30000
       },
       {
-        "outputDir": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/Playwright-TypeScript-Portfolio/test-results",
+        "outputDir": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/PLAYWRIGHT-TS-PORTFOLIO/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 6
+          "actualWorkers": 5
         },
         "id": "webkit",
         "name": "webkit",
-        "testDir": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/Playwright-TypeScript-Portfolio/tests",
+        "testDir": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/PLAYWRIGHT-TS-PORTFOLIO/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -93,15 +93,15 @@
         "timeout": 30000
       },
       {
-        "outputDir": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/Playwright-TypeScript-Portfolio/test-results",
+        "outputDir": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/PLAYWRIGHT-TS-PORTFOLIO/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 6
+          "actualWorkers": 5
         },
         "id": "Mobile Chrome",
         "name": "Mobile Chrome",
-        "testDir": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/Playwright-TypeScript-Portfolio/tests",
+        "testDir": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/PLAYWRIGHT-TS-PORTFOLIO/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -109,15 +109,15 @@
         "timeout": 30000
       },
       {
-        "outputDir": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/Playwright-TypeScript-Portfolio/test-results",
+        "outputDir": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/PLAYWRIGHT-TS-PORTFOLIO/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 6
+          "actualWorkers": 5
         },
         "id": "Mobile Safari",
         "name": "Mobile Safari",
-        "testDir": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/Playwright-TypeScript-Portfolio/tests",
+        "testDir": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/PLAYWRIGHT-TS-PORTFOLIO/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -135,587 +135,196 @@
   },
   "suites": [
     {
-      "title": "ui/file-operations/download.spec.ts",
-      "file": "ui/file-operations/download.spec.ts",
+      "title": "ui/products/products.spec.ts",
+      "file": "ui/products/products.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "File Download Tests",
-          "file": "ui/file-operations/download.spec.ts",
-          "line": 5,
+          "title": "SauceDemo Product Tests",
+          "file": "ui/products/products.spec.ts",
+          "line": 6,
           "column": 6,
-          "specs": [
+          "specs": [],
+          "suites": [
             {
-              "title": "download file and verify",
-              "ok": true,
-              "tags": [],
-              "tests": [
+              "title": "Product Information",
+              "file": "ui/products/products.spec.ts",
+              "line": 169,
+              "column": 8,
+              "specs": [
                 {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
+                  "title": "should display product names correctly",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 4777,
-                      "errors": [],
-                      "stdout": [
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
                         {
-                          "text": "Downloaded file:  tmpxzd7c32o.txt\n"
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 4071,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T14:56:47.668Z",
+                          "annotations": [],
+                          "attachments": []
                         }
                       ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-15T13:29:36.731Z",
-                      "annotations": [],
-                      "attachments": []
+                      "status": "expected"
                     }
                   ],
-                  "status": "expected"
-                }
-              ],
-              "id": "4b5f62ca3eea599e95d8-9d83db2867244c423c66",
-              "file": "ui/file-operations/download.spec.ts",
-              "line": 7,
-              "column": 9
-            },
-            {
-              "title": "download file and read content",
-              "ok": true,
-              "tags": [],
-              "tests": [
+                  "id": "4a9f5a1bfed7ccb76b8d-2182b60abde3b8467901",
+                  "file": "ui/products/products.spec.ts",
+                  "line": 171,
+                  "column": 9
+                },
                 {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
+                  "title": "should display product names correctly",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 5750,
-                      "errors": [],
-                      "stdout": [
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
                         {
-                          "text": "File content:  This is a test file for upload testing\n"
+                          "workerIndex": 1,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 4142,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T14:56:47.660Z",
+                          "annotations": [],
+                          "attachments": []
                         }
                       ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-15T13:29:36.732Z",
-                      "annotations": [],
-                      "attachments": []
+                      "status": "expected"
                     }
                   ],
-                  "status": "expected"
-                }
-              ],
-              "id": "4b5f62ca3eea599e95d8-e0645ec509c0d366e9b1",
-              "file": "ui/file-operations/download.spec.ts",
-              "line": 30,
-              "column": 9
-            },
-            {
-              "title": "handle download failure",
-              "ok": true,
-              "tags": [],
-              "tests": [
+                  "id": "4a9f5a1bfed7ccb76b8d-d824d0297e9ea3192d77",
+                  "file": "ui/products/products.spec.ts",
+                  "line": 171,
+                  "column": 9
+                },
                 {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
+                  "title": "should display product names correctly",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 3294,
-                      "errors": [],
-                      "stdout": [
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
                         {
-                          "text": "Download succeeded\n"
+                          "workerIndex": 2,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 3504,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T14:56:47.664Z",
+                          "annotations": [],
+                          "attachments": []
                         }
                       ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-15T13:29:36.736Z",
-                      "annotations": [],
-                      "attachments": []
+                      "status": "expected"
                     }
                   ],
-                  "status": "expected"
-                }
-              ],
-              "id": "4b5f62ca3eea599e95d8-3428acbd3a79ad48d505",
-              "file": "ui/file-operations/download.spec.ts",
-              "line": 46,
-              "column": 9
-            },
-            {
-              "title": "download file and verify",
-              "ok": true,
-              "tags": [],
-              "tests": [
+                  "id": "4a9f5a1bfed7ccb76b8d-11fcb1e282947c629688",
+                  "file": "ui/products/products.spec.ts",
+                  "line": 171,
+                  "column": 9
+                },
                 {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
+                  "title": "should display product names correctly",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 2948,
-                      "errors": [],
-                      "stdout": [
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
                         {
-                          "text": "Downloaded file:  tmpxzd7c32o.txt\n"
+                          "workerIndex": 3,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 2448,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T14:56:47.659Z",
+                          "annotations": [],
+                          "attachments": []
                         }
                       ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-15T13:29:36.733Z",
-                      "annotations": [],
-                      "attachments": []
+                      "status": "expected"
                     }
                   ],
-                  "status": "expected"
-                }
-              ],
-              "id": "4b5f62ca3eea599e95d8-efe6ab14569885b1a2e7",
-              "file": "ui/file-operations/download.spec.ts",
-              "line": 7,
-              "column": 9
-            },
-            {
-              "title": "download file and read content",
-              "ok": true,
-              "tags": [],
-              "tests": [
+                  "id": "4a9f5a1bfed7ccb76b8d-6b7b02641685284fb0c2",
+                  "file": "ui/products/products.spec.ts",
+                  "line": 171,
+                  "column": 9
+                },
                 {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
+                  "title": "should display product names correctly",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 4,
-                      "status": "passed",
-                      "duration": 4201,
-                      "errors": [],
-                      "stdout": [
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari",
+                      "projectName": "Mobile Safari",
+                      "results": [
                         {
-                          "text": "File content:  This is a test file for upload testing\n"
+                          "workerIndex": 4,
+                          "parallelIndex": 4,
+                          "status": "passed",
+                          "duration": 2986,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-01-15T14:56:47.666Z",
+                          "annotations": [],
+                          "attachments": []
                         }
                       ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-15T13:29:36.734Z",
-                      "annotations": [],
-                      "attachments": []
+                      "status": "expected"
                     }
                   ],
-                  "status": "expected"
+                  "id": "4a9f5a1bfed7ccb76b8d-89f1d019397a60fcff37",
+                  "file": "ui/products/products.spec.ts",
+                  "line": 171,
+                  "column": 9
                 }
-              ],
-              "id": "4b5f62ca3eea599e95d8-bc8b39d6b1ca6b295d72",
-              "file": "ui/file-operations/download.spec.ts",
-              "line": 30,
-              "column": 9
-            },
-            {
-              "title": "handle download failure",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 5,
-                      "parallelIndex": 5,
-                      "status": "passed",
-                      "duration": 2950,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Download succeeded\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-15T13:29:36.729Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "4b5f62ca3eea599e95d8-15c0c379b4a61457c04a",
-              "file": "ui/file-operations/download.spec.ts",
-              "line": 46,
-              "column": 9
-            },
-            {
-              "title": "download file and verify",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [
-                    {
-                      "workerIndex": 7,
-                      "parallelIndex": 5,
-                      "status": "passed",
-                      "duration": 2559,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Downloaded file:  tmpxzd7c32o.txt\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-15T13:29:40.637Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "4b5f62ca3eea599e95d8-0901e713d992490c2304",
-              "file": "ui/file-operations/download.spec.ts",
-              "line": 7,
-              "column": 9
-            },
-            {
-              "title": "download file and read content",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [
-                    {
-                      "workerIndex": 6,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 3399,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "File content:  This is a test file for upload testing\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-15T13:29:40.509Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "4b5f62ca3eea599e95d8-88f1746223447915825b",
-              "file": "ui/file-operations/download.spec.ts",
-              "line": 30,
-              "column": 9
-            },
-            {
-              "title": "handle download failure",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [
-                    {
-                      "workerIndex": 8,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 3557,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Download succeeded\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-15T13:29:40.901Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "4b5f62ca3eea599e95d8-309b53af6c52324e86b6",
-              "file": "ui/file-operations/download.spec.ts",
-              "line": 46,
-              "column": 9
-            },
-            {
-              "title": "download file and verify",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 9,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 2476,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Downloaded file:  tmpxzd7c32o.txt\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-15T13:29:42.004Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "4b5f62ca3eea599e95d8-2bd5615d76207cbd5e37",
-              "file": "ui/file-operations/download.spec.ts",
-              "line": 7,
-              "column": 9
-            },
-            {
-              "title": "download file and read content",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 10,
-                      "parallelIndex": 4,
-                      "status": "passed",
-                      "duration": 2280,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "File content:  This is a test file for upload testing\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-15T13:29:42.426Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "4b5f62ca3eea599e95d8-ad6ef6c79329c6a8c025",
-              "file": "ui/file-operations/download.spec.ts",
-              "line": 30,
-              "column": 9
-            },
-            {
-              "title": "handle download failure",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 11,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 2079,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Download succeeded\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-15T13:29:42.948Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "4b5f62ca3eea599e95d8-6135bd396000ae3ba797",
-              "file": "ui/file-operations/download.spec.ts",
-              "line": 46,
-              "column": 9
-            },
-            {
-              "title": "download file and verify",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
-                  "results": [
-                    {
-                      "workerIndex": 12,
-                      "parallelIndex": 5,
-                      "status": "passed",
-                      "duration": 2154,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Downloaded file:  tmpxzd7c32o.txt\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-15T13:29:43.591Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "4b5f62ca3eea599e95d8-01a83d22f5cc412a04d6",
-              "file": "ui/file-operations/download.spec.ts",
-              "line": 7,
-              "column": 9
-            },
-            {
-              "title": "download file and read content",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
-                  "results": [
-                    {
-                      "workerIndex": 13,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 2401,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "File content:  This is a test file for upload testing\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-15T13:29:44.298Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "4b5f62ca3eea599e95d8-f7bb4050de987325e682",
-              "file": "ui/file-operations/download.spec.ts",
-              "line": 30,
-              "column": 9
-            },
-            {
-              "title": "handle download failure",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
-                  "results": [
-                    {
-                      "workerIndex": 14,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 2569,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Download succeeded\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-15T13:29:44.868Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "4b5f62ca3eea599e95d8-2b109efbe8e88f8b5264",
-              "file": "ui/file-operations/download.spec.ts",
-              "line": 46,
-              "column": 9
+              ]
             }
           ]
         }
@@ -724,9 +333,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-15T13:29:36.390Z",
-    "duration": 11184.110999999999,
-    "expected": 15,
+    "startTime": "2026-01-15T14:56:47.334Z",
+    "duration": 5426.371999999999,
+    "expected": 5,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
