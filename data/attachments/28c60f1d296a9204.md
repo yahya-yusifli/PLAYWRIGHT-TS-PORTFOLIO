@@ -1,0 +1,565 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - link "Fork me on GitHub":
+      - /url: https://github.com/tourdedave/the-internet
+      - img "Fork me on GitHub" [ref=e5] [cursor=pointer]
+    - generic [ref=e7]:
+      - heading "File Downloader" [level=3] [ref=e8]
+      - link "Doc2.doc" [ref=e9] [cursor=pointer]:
+        - /url: download/Doc2.doc
+      - link "tmpxzd7c32o.txt" [ref=e10] [cursor=pointer]:
+        - /url: download/tmpxzd7c32o.txt
+      - link "Test the herokuApp login page.pdf" [ref=e11] [cursor=pointer]:
+        - /url: download/Test the herokuApp login page.pdf
+      - link "tmp_cxq2krt.txt" [ref=e12] [cursor=pointer]:
+        - /url: download/tmp_cxq2krt.txt
+      - link "tmp5asnn2gi.txt" [ref=e13] [cursor=pointer]:
+        - /url: download/tmp5asnn2gi.txt
+      - link "tmpschmb1he.txt" [ref=e14] [cursor=pointer]:
+        - /url: download/tmpschmb1he.txt
+      - link "devops.docx" [ref=e15] [cursor=pointer]:
+        - /url: download/devops.docx
+      - link "tmpirrgns9e.txt" [ref=e16] [cursor=pointer]:
+        - /url: download/tmpirrgns9e.txt
+      - link "test_document.png" [ref=e17] [cursor=pointer]:
+        - /url: download/test_document.png
+      - link "tmp1tszp6jn.txt" [ref=e18] [cursor=pointer]:
+        - /url: download/tmp1tszp6jn.txt
+      - link "tmph9hea_90.txt" [ref=e19] [cursor=pointer]:
+        - /url: download/tmph9hea_90.txt
+      - link "tmpjobduyj7.txt" [ref=e20] [cursor=pointer]:
+        - /url: download/tmpjobduyj7.txt
+      - link "test-upload.txt" [ref=e21] [cursor=pointer]:
+        - /url: download/test-upload.txt
+      - link "SomeFile.txt" [ref=e22] [cursor=pointer]:
+        - /url: download/SomeFile.txt
+      - link "localfile.txt" [ref=e23] [cursor=pointer]:
+        - /url: download/localfile.txt
+      - link "selenium-snapshot.png" [ref=e24] [cursor=pointer]:
+        - /url: download/selenium-snapshot.png
+      - link "đòi nợ.jpg" [ref=e25] [cursor=pointer]:
+        - /url: download/đòi nợ.jpg
+      - link "salary-by-position.png" [ref=e26] [cursor=pointer]:
+        - /url: download/salary-by-position.png
+      - link "app.asar" [ref=e27] [cursor=pointer]:
+        - /url: download/app.asar
+      - link "tmpso6lmlsy.txt" [ref=e28] [cursor=pointer]:
+        - /url: download/tmpso6lmlsy.txt
+      - link "processed_silik_serit.jpg" [ref=e29] [cursor=pointer]:
+        - /url: download/processed_silik_serit.jpg
+      - link "Кино 26.03.2025 в 01.56.mov" [ref=e30] [cursor=pointer]:
+        - /url: download/Кино 26.03.2025 в 01.56.mov
+      - link "tmp2b8moyrh.txt" [ref=e31] [cursor=pointer]:
+        - /url: download/tmp2b8moyrh.txt
+      - link "405C0898-656D-46EE-9113-5C905DE6E3DA.png" [ref=e32] [cursor=pointer]:
+        - /url: download/405C0898-656D-46EE-9113-5C905DE6E3DA.png
+      - link "tmpkpkhoed4.txt" [ref=e33] [cursor=pointer]:
+        - /url: download/tmpkpkhoed4.txt
+      - link "tmpllksscpk.txt" [ref=e34] [cursor=pointer]:
+        - /url: download/tmpllksscpk.txt
+      - link "tmpc1eh9ega.txt" [ref=e35] [cursor=pointer]:
+        - /url: download/tmpc1eh9ega.txt
+      - link "RenameFilebyMasaid.pdf" [ref=e36] [cursor=pointer]:
+        - /url: download/RenameFilebyMasaid.pdf
+      - link "шаблон заявления BG.docx" [ref=e37] [cursor=pointer]:
+        - /url: download/шаблон заявления BG.docx
+      - link "tmpnteqm49v.txt" [ref=e38] [cursor=pointer]:
+        - /url: download/tmpnteqm49v.txt
+      - link "istockphoto-1966794068-1024x1024.jpg" [ref=e39] [cursor=pointer]:
+        - /url: download/istockphoto-1966794068-1024x1024.jpg
+      - link "receipt-280284970001024502.pdf" [ref=e40] [cursor=pointer]:
+        - /url: download/receipt-280284970001024502.pdf
+      - link "tmp_0iv6afq.txt" [ref=e41] [cursor=pointer]:
+        - /url: download/tmp_0iv6afq.txt
+      - link "Ảnh chụp màn hình 2024-08-07 001713.png" [ref=e42] [cursor=pointer]:
+        - /url: download/Ảnh chụp màn hình 2024-08-07 001713.png
+      - link "tmp3juhdyiz.txt" [ref=e43] [cursor=pointer]:
+        - /url: download/tmp3juhdyiz.txt
+      - link "test_upload_document.txt" [ref=e44] [cursor=pointer]:
+        - /url: download/test_upload_document.txt
+      - link "tmp56wgw5ue.txt" [ref=e45] [cursor=pointer]:
+        - /url: download/tmp56wgw5ue.txt
+      - link "luminoslogo.png" [ref=e46] [cursor=pointer]:
+        - /url: download/luminoslogo.png
+      - link "test-upload-image.jpg" [ref=e47] [cursor=pointer]:
+        - /url: download/test-upload-image.jpg
+      - link "Assets.car" [ref=e48] [cursor=pointer]:
+        - /url: download/Assets.car
+      - link "test-upload-file.txt" [ref=e49] [cursor=pointer]:
+        - /url: download/test-upload-file.txt
+      - link "tmp6djdgzbe.txt" [ref=e50] [cursor=pointer]:
+        - /url: download/tmp6djdgzbe.txt
+      - link "Final-Test.png" [ref=e51] [cursor=pointer]:
+        - /url: download/Final-Test.png
+      - link "sample_media_file.png" [ref=e52] [cursor=pointer]:
+        - /url: download/sample_media_file.png
+      - link "demo-upload.txt" [ref=e53] [cursor=pointer]:
+        - /url: download/demo-upload.txt
+      - link "sample.txt" [ref=e54] [cursor=pointer]:
+        - /url: download/sample.txt
+      - link "tmpfx5qfs3u.txt" [ref=e55] [cursor=pointer]:
+        - /url: download/tmpfx5qfs3u.txt
+      - link "tmp195o4ye5.txt" [ref=e56] [cursor=pointer]:
+        - /url: download/tmp195o4ye5.txt
+      - link "tmpds0gjavh.txt" [ref=e57] [cursor=pointer]:
+        - /url: download/tmpds0gjavh.txt
+      - link "1BA407C0-92BA-4072-A16F-17B8BB42C32E.png" [ref=e58] [cursor=pointer]:
+        - /url: download/1BA407C0-92BA-4072-A16F-17B8BB42C32E.png
+      - link "tmpigkmtmmn.txt" [ref=e59] [cursor=pointer]:
+        - /url: download/tmpigkmtmmn.txt
+      - link "tmpnlyy_h2a.txt" [ref=e60] [cursor=pointer]:
+        - /url: download/tmpnlyy_h2a.txt
+      - link "Aadhar_card.pdf" [ref=e61] [cursor=pointer]:
+        - /url: download/Aadhar_card.pdf
+      - link "file.txt" [ref=e62] [cursor=pointer]:
+        - /url: download/file.txt
+      - link "tmpk_cpj_1n.txt" [ref=e63] [cursor=pointer]:
+        - /url: download/tmpk_cpj_1n.txt
+      - link "tmps4h9pe0f.txt" [ref=e64] [cursor=pointer]:
+        - /url: download/tmps4h9pe0f.txt
+      - link "tmp6pebyycx.txt" [ref=e65] [cursor=pointer]:
+        - /url: download/tmp6pebyycx.txt
+      - link "Gemini_Generated_Image_ogztsuogztsuogzt.png" [ref=e66] [cursor=pointer]:
+        - /url: download/Gemini_Generated_Image_ogztsuogztsuogzt.png
+      - link "tmppl1dq5ra.txt" [ref=e67] [cursor=pointer]:
+        - /url: download/tmppl1dq5ra.txt
+      - link "icon.icns" [ref=e68] [cursor=pointer]:
+        - /url: download/icon.icns
+      - link "tmptjdzf6w4.txt" [ref=e69] [cursor=pointer]:
+        - /url: download/tmptjdzf6w4.txt
+      - link "Playwright_Course_Overview.pdf" [ref=e70] [cursor=pointer]:
+        - /url: download/Playwright_Course_Overview.pdf
+      - link "test_upload_file.txt" [ref=e71] [cursor=pointer]:
+        - /url: download/test_upload_file.txt
+      - link "upload_test.txt" [ref=e72] [cursor=pointer]:
+        - /url: download/upload_test.txt
+      - link "tmp18ae7lvp.txt" [ref=e73] [cursor=pointer]:
+        - /url: download/tmp18ae7lvp.txt
+      - link "bảng điểm.jpg" [ref=e74] [cursor=pointer]:
+        - /url: download/bảng điểm.jpg
+      - link "example.json" [ref=e75] [cursor=pointer]:
+        - /url: download/example.json
+      - link "tmp601e0e5t.txt" [ref=e76] [cursor=pointer]:
+        - /url: download/tmp601e0e5t.txt
+      - link "tmp1pm5oyh7.txt" [ref=e77] [cursor=pointer]:
+        - /url: download/tmp1pm5oyh7.txt
+      - link "test-file.txt" [ref=e78] [cursor=pointer]:
+        - /url: download/test-file.txt
+      - link "Ankita Resume.docx" [ref=e79] [cursor=pointer]:
+        - /url: download/Ankita Resume.docx
+      - link "Screenshot 2025-12-31 131728.png" [ref=e80] [cursor=pointer]:
+        - /url: download/Screenshot 2025-12-31 131728.png
+      - link "tmp2g_zlm_z.txt" [ref=e81] [cursor=pointer]:
+        - /url: download/tmp2g_zlm_z.txt
+      - link "bb.txt" [ref=e82] [cursor=pointer]:
+        - /url: download/bb.txt
+      - link "test_upload_sample.txt" [ref=e83] [cursor=pointer]:
+        - /url: download/test_upload_sample.txt
+      - link "ERD.png" [ref=e84] [cursor=pointer]:
+        - /url: download/ERD.png
+      - link "app-update.yml" [ref=e85] [cursor=pointer]:
+        - /url: download/app-update.yml
+      - link "download.jpg" [ref=e86] [cursor=pointer]:
+        - /url: download/download.jpg
+      - link "test-upload-1768418089632-1.txt" [ref=e87] [cursor=pointer]:
+        - /url: download/test-upload-1768418089632-1.txt
+      - link "megadyneBladeHero.jpg" [ref=e88] [cursor=pointer]:
+        - /url: download/megadyneBladeHero.jpg
+      - link "110.pdf" [ref=e89] [cursor=pointer]:
+        - /url: download/110.pdf
+      - link "RELPEDSTATUS_20261401183654.zip" [ref=e90] [cursor=pointer]:
+        - /url: download/RELPEDSTATUS_20261401183654.zip
+      - link "file.json" [ref=e91] [cursor=pointer]:
+        - /url: download/file.json
+      - link "config.xml" [ref=e92] [cursor=pointer]:
+        - /url: download/config.xml
+      - link "falling-cat.png" [ref=e93] [cursor=pointer]:
+        - /url: download/falling-cat.png
+      - link "tmppve0iwrs.txt" [ref=e94] [cursor=pointer]:
+        - /url: download/tmppve0iwrs.txt
+      - link "670B4AE0-D88D-4C48-81BD-23131C682D0E.png" [ref=e95] [cursor=pointer]:
+        - /url: download/670B4AE0-D88D-4C48-81BD-23131C682D0E.png
+      - link "tmp1f9rcam9.txt" [ref=e96] [cursor=pointer]:
+        - /url: download/tmp1f9rcam9.txt
+      - link "tmpb_rgvgxq.txt" [ref=e97] [cursor=pointer]:
+        - /url: download/tmpb_rgvgxq.txt
+      - link "sample-zip-file.zip" [ref=e98] [cursor=pointer]:
+        - /url: download/sample-zip-file.zip
+      - link "Application Scrutiny (1).csv" [ref=e99] [cursor=pointer]:
+        - /url: download/Application Scrutiny (1).csv
+      - link "kote.jpg" [ref=e100] [cursor=pointer]:
+        - /url: download/kote.jpg
+      - link "tmpb6ygwibq.txt" [ref=e101] [cursor=pointer]:
+        - /url: download/tmpb6ygwibq.txt
+      - link "tmpc5_57jzu.txt" [ref=e102] [cursor=pointer]:
+        - /url: download/tmpc5_57jzu.txt
+      - link "tmp2_orjw1b.txt" [ref=e103] [cursor=pointer]:
+        - /url: download/tmp2_orjw1b.txt
+      - link "tmp24a6k9x4.txt" [ref=e104] [cursor=pointer]:
+        - /url: download/tmp24a6k9x4.txt
+      - link "tmpzn34r4wj.txt" [ref=e105] [cursor=pointer]:
+        - /url: download/tmpzn34r4wj.txt
+      - link "tmp1gh56pl0.txt" [ref=e106] [cursor=pointer]:
+        - /url: download/tmp1gh56pl0.txt
+      - link "tmpfb06vju_.txt" [ref=e107] [cursor=pointer]:
+        - /url: download/tmpfb06vju_.txt
+      - link "tmpx3adkyol.txt" [ref=e108] [cursor=pointer]:
+        - /url: download/tmpx3adkyol.txt
+      - link "Jpeg_with_exif.jpeg" [ref=e109] [cursor=pointer]:
+        - /url: download/Jpeg_with_exif.jpeg
+      - link "tmpznwx1wo6.txt" [ref=e110] [cursor=pointer]:
+        - /url: download/tmpznwx1wo6.txt
+      - link "TestUploadFile.txt" [ref=e111] [cursor=pointer]:
+        - /url: download/TestUploadFile.txt
+      - link "tmpt6d8his1.txt" [ref=e112] [cursor=pointer]:
+        - /url: download/tmpt6d8his1.txt
+      - link "tmputh3wnqv.txt" [ref=e113] [cursor=pointer]:
+        - /url: download/tmputh3wnqv.txt
+      - link "tmp72u6ip9j.txt" [ref=e114] [cursor=pointer]:
+        - /url: download/tmp72u6ip9j.txt
+      - link "tmp1us0p1ts.txt" [ref=e115] [cursor=pointer]:
+        - /url: download/tmp1us0p1ts.txt
+      - link "tmpkas1590n.txt" [ref=e116] [cursor=pointer]:
+        - /url: download/tmpkas1590n.txt
+      - link "tmp1l819byi.txt" [ref=e117] [cursor=pointer]:
+        - /url: download/tmp1l819byi.txt
+      - link "tmp2xzz9fll.txt" [ref=e118] [cursor=pointer]:
+        - /url: download/tmp2xzz9fll.txt
+      - link "test-image.png" [ref=e119] [cursor=pointer]:
+        - /url: download/test-image.png
+      - link "content.txt.txt" [ref=e120] [cursor=pointer]:
+        - /url: download/content.txt.txt
+      - link "tmp_9hwb7ch.txt" [ref=e121] [cursor=pointer]:
+        - /url: download/tmp_9hwb7ch.txt
+      - link "tmpxpl4vfal.txt" [ref=e122] [cursor=pointer]:
+        - /url: download/tmpxpl4vfal.txt
+      - link "Photo 1.avif" [ref=e123] [cursor=pointer]:
+        - /url: download/Photo 1.avif
+      - link "Screenshot 2025-12-17 213320.png" [ref=e124] [cursor=pointer]:
+        - /url: download/Screenshot 2025-12-17 213320.png
+      - link "tmp96_nlqw9.txt" [ref=e125] [cursor=pointer]:
+        - /url: download/tmp96_nlqw9.txt
+      - link "helth image.jpg" [ref=e126] [cursor=pointer]:
+        - /url: download/helth image.jpg
+      - link "tmpz3dmifkx.txt" [ref=e127] [cursor=pointer]:
+        - /url: download/tmpz3dmifkx.txt
+      - link "tmpui7sq9h3.txt" [ref=e128] [cursor=pointer]:
+        - /url: download/tmpui7sq9h3.txt
+      - link "tmpho1fci98.txt" [ref=e129] [cursor=pointer]:
+        - /url: download/tmpho1fci98.txt
+      - link "tmp3w67h6ej.txt" [ref=e130] [cursor=pointer]:
+        - /url: download/tmp3w67h6ej.txt
+      - link "tmpmkv0i5de.txt" [ref=e131] [cursor=pointer]:
+        - /url: download/tmpmkv0i5de.txt
+      - link "tmp4bdnduz5.txt" [ref=e132] [cursor=pointer]:
+        - /url: download/tmp4bdnduz5.txt
+      - link "macd.png" [ref=e133] [cursor=pointer]:
+        - /url: download/macd.png
+      - link "tmpvi7zyw8r.txt" [ref=e134] [cursor=pointer]:
+        - /url: download/tmpvi7zyw8r.txt
+      - link "tmpg2kzldd9.txt" [ref=e135] [cursor=pointer]:
+        - /url: download/tmpg2kzldd9.txt
+      - link "TestUpload_Sample.txt" [ref=e136] [cursor=pointer]:
+        - /url: download/TestUpload_Sample.txt
+      - link "tmps7glt23c.txt" [ref=e137] [cursor=pointer]:
+        - /url: download/tmps7glt23c.txt
+      - link "tmpx2bxswih.txt" [ref=e138] [cursor=pointer]:
+        - /url: download/tmpx2bxswih.txt
+      - link "tmp70evjyxq.txt" [ref=e139] [cursor=pointer]:
+        - /url: download/tmp70evjyxq.txt
+      - link "images.jpg" [ref=e140] [cursor=pointer]:
+        - /url: download/images.jpg
+      - link "some-file.txt" [ref=e141] [cursor=pointer]:
+        - /url: download/some-file.txt
+      - link "tmpy0hge10k.txt" [ref=e142] [cursor=pointer]:
+        - /url: download/tmpy0hge10k.txt
+      - link "Test1.pdf" [ref=e143] [cursor=pointer]:
+        - /url: download/Test1.pdf
+      - link "tmpd5hyaesl.txt" [ref=e144] [cursor=pointer]:
+        - /url: download/tmpd5hyaesl.txt
+      - link "tmpb7gdf0f9.txt" [ref=e145] [cursor=pointer]:
+        - /url: download/tmpb7gdf0f9.txt
+      - link "tmpol0z5e2m.txt" [ref=e146] [cursor=pointer]:
+        - /url: download/tmpol0z5e2m.txt
+      - link "tmpmj4jyomv.txt" [ref=e147] [cursor=pointer]:
+        - /url: download/tmpmj4jyomv.txt
+      - link "Testcase1_hubspot-crm.xlsx" [ref=e148] [cursor=pointer]:
+        - /url: download/Testcase1_hubspot-crm.xlsx
+      - link "test_upload_image.jpg" [ref=e149] [cursor=pointer]:
+        - /url: download/test_upload_image.jpg
+      - link "tmpx2_92fkw.txt" [ref=e150] [cursor=pointer]:
+        - /url: download/tmpx2_92fkw.txt
+      - link "targetScreenshot (3).png" [ref=e151] [cursor=pointer]:
+        - /url: download/targetScreenshot (3).png
+      - link "test_image.jpg" [ref=e152] [cursor=pointer]:
+        - /url: download/test_image.jpg
+      - link "LambdaTest.txt" [ref=e153] [cursor=pointer]:
+        - /url: download/LambdaTest.txt
+      - link "tmpkufy5ps_.txt" [ref=e154] [cursor=pointer]:
+        - /url: download/tmpkufy5ps_.txt
+      - link "avatar1.jpg" [ref=e155] [cursor=pointer]:
+        - /url: download/avatar1.jpg
+      - link "tmpy6o88_82.txt" [ref=e156] [cursor=pointer]:
+        - /url: download/tmpy6o88_82.txt
+      - link "puppy.png" [ref=e157] [cursor=pointer]:
+        - /url: download/puppy.png
+      - link "ChatGPT-SOH-Testing-AI-Systems-and-Testing-with-AI-01-14-2026_09_06_AM.png" [ref=e158] [cursor=pointer]:
+        - /url: download/ChatGPT-SOH-Testing-AI-Systems-and-Testing-with-AI-01-14-2026_09_06_AM.png
+      - link "webdriverIO.png" [ref=e159] [cursor=pointer]:
+        - /url: download/webdriverIO.png
+      - link "ADV-132.pdf" [ref=e160] [cursor=pointer]:
+        - /url: download/ADV-132.pdf
+      - link "Sample_Image.png" [ref=e161] [cursor=pointer]:
+        - /url: download/Sample_Image.png
+      - link "tmphp5nmn00.txt" [ref=e162] [cursor=pointer]:
+        - /url: download/tmphp5nmn00.txt
+      - link "file2.png" [ref=e163] [cursor=pointer]:
+        - /url: download/file2.png
+      - link "Myfile.pdf" [ref=e164] [cursor=pointer]:
+        - /url: download/Myfile.pdf
+      - link "zero_bytes_file.txt" [ref=e165] [cursor=pointer]:
+        - /url: download/zero_bytes_file.txt
+      - link "creature ref.png" [ref=e166] [cursor=pointer]:
+        - /url: download/creature ref.png
+      - link "sampleFile.txt" [ref=e167] [cursor=pointer]:
+        - /url: download/sampleFile.txt
+      - link "tmp_5bo76zv.txt" [ref=e168] [cursor=pointer]:
+        - /url: download/tmp_5bo76zv.txt
+      - link "tmp94gbe3hj.txt" [ref=e169] [cursor=pointer]:
+        - /url: download/tmp94gbe3hj.txt
+      - link "Localizable-PremiumMacOS.strings" [ref=e170] [cursor=pointer]:
+        - /url: download/Localizable-PremiumMacOS.strings
+      - link "TestDocument.txt" [ref=e171] [cursor=pointer]:
+        - /url: download/TestDocument.txt
+      - link "battery_report.pdf" [ref=e172] [cursor=pointer]:
+        - /url: download/battery_report.pdf
+      - link "seven.JPG" [ref=e173] [cursor=pointer]:
+        - /url: download/seven.JPG
+      - link "arquivo.txt" [ref=e174] [cursor=pointer]:
+        - /url: download/arquivo.txt
+      - link "file_upload.txt" [ref=e175] [cursor=pointer]:
+        - /url: download/file_upload.txt
+      - link "tmp25qby29_.txt" [ref=e176] [cursor=pointer]:
+        - /url: download/tmp25qby29_.txt
+      - link "Fond Ecran Ordinateur Vision Board Scrapbook Vintage Beige et Gris (2).png" [ref=e177] [cursor=pointer]:
+        - /url: download/Fond Ecran Ordinateur Vision Board Scrapbook Vintage Beige et Gris (2).png
+      - link "ぬる.txt" [ref=e178] [cursor=pointer]:
+        - /url: download/ぬる.txt
+      - link "tmpet4qez8d.txt" [ref=e179] [cursor=pointer]:
+        - /url: download/tmpet4qez8d.txt
+      - link "tmpyw161bdn.txt" [ref=e180] [cursor=pointer]:
+        - /url: download/tmpyw161bdn.txt
+      - link "log.html" [ref=e181] [cursor=pointer]:
+        - /url: download/log.html
+      - link "tmpgrq4iol4.txt" [ref=e182] [cursor=pointer]:
+        - /url: download/tmpgrq4iol4.txt
+      - link "tmpr8buoi3v.txt" [ref=e183] [cursor=pointer]:
+        - /url: download/tmpr8buoi3v.txt
+      - link "test.png" [ref=e184] [cursor=pointer]:
+        - /url: download/test.png
+      - link "tmpqbuvi_zc.txt" [ref=e185] [cursor=pointer]:
+        - /url: download/tmpqbuvi_zc.txt
+      - link "vibe reference.png" [ref=e186] [cursor=pointer]:
+        - /url: download/vibe reference.png
+      - link "tmpgsiv77hq.txt" [ref=e187] [cursor=pointer]:
+        - /url: download/tmpgsiv77hq.txt
+      - link "TestUpload.txt" [ref=e188] [cursor=pointer]:
+        - /url: download/TestUpload.txt
+      - link "tmpmvsfylzy.txt" [ref=e189] [cursor=pointer]:
+        - /url: download/tmpmvsfylzy.txt
+      - link "Снимок экрана 2026-01-15 в 00.02.13.png" [ref=e190] [cursor=pointer]:
+        - /url: download/Снимок экрана 2026-01-15 в 00.02.13.png
+      - link "LearningAutomation.pdf" [ref=e191] [cursor=pointer]:
+        - /url: download/LearningAutomation.pdf
+      - link "chromedriver.exe" [ref=e192] [cursor=pointer]:
+        - /url: download/chromedriver.exe
+      - link "tmp6ohsmewe.txt" [ref=e193] [cursor=pointer]:
+        - /url: download/tmp6ohsmewe.txt
+      - link "tmptgbjboob.jpg" [ref=e194] [cursor=pointer]:
+        - /url: download/tmptgbjboob.jpg
+      - link "tmp6swj430q.txt" [ref=e195] [cursor=pointer]:
+        - /url: download/tmp6swj430q.txt
+      - link "sample_test_file.txt" [ref=e196] [cursor=pointer]:
+        - /url: download/sample_test_file.txt
+      - link "tmplxq6tvrg.txt" [ref=e197] [cursor=pointer]:
+        - /url: download/tmplxq6tvrg.txt
+      - link "tmpbjnq819p.txt" [ref=e198] [cursor=pointer]:
+        - /url: download/tmpbjnq819p.txt
+      - link "tmp6v33ptvm.txt" [ref=e199] [cursor=pointer]:
+        - /url: download/tmp6v33ptvm.txt
+      - link "9500.pdf" [ref=e200] [cursor=pointer]:
+        - /url: download/9500.pdf
+      - link "tmp6q2uwp_3.txt" [ref=e201] [cursor=pointer]:
+        - /url: download/tmp6q2uwp_3.txt
+      - link "random_data.txt" [ref=e202] [cursor=pointer]:
+        - /url: download/random_data.txt
+      - link "Info.plist" [ref=e203] [cursor=pointer]:
+        - /url: download/Info.plist
+      - link "upload-me.txt" [ref=e204] [cursor=pointer]:
+        - /url: download/upload-me.txt
+      - link "tmp1g8w03wq.txt" [ref=e205] [cursor=pointer]:
+        - /url: download/tmp1g8w03wq.txt
+      - link "Localizable-PremiumMacOS.stringsdict" [ref=e206] [cursor=pointer]:
+        - /url: download/Localizable-PremiumMacOS.stringsdict
+      - link "upload_sample.txt" [ref=e207] [cursor=pointer]:
+        - /url: download/upload_sample.txt
+      - link "sample_upload.txt" [ref=e208] [cursor=pointer]:
+        - /url: download/sample_upload.txt
+      - link "tmp8l3fo4d5.txt" [ref=e209] [cursor=pointer]:
+        - /url: download/tmp8l3fo4d5.txt
+      - link "tmpc7_ihvyn.txt" [ref=e210] [cursor=pointer]:
+        - /url: download/tmpc7_ihvyn.txt
+      - link "test_document.pdf" [ref=e211] [cursor=pointer]:
+        - /url: download/test_document.pdf
+      - link "sample.pdf" [ref=e212] [cursor=pointer]:
+        - /url: download/sample.pdf
+      - link "tmpbv29xt3c.txt" [ref=e213] [cursor=pointer]:
+        - /url: download/tmpbv29xt3c.txt
+      - link "test-upload-1768422566172-1.txt" [ref=e214] [cursor=pointer]:
+        - /url: download/test-upload-1768422566172-1.txt
+      - link "sm.jpg" [ref=e215] [cursor=pointer]:
+        - /url: download/sm.jpg
+      - link "co.JPG" [ref=e216] [cursor=pointer]:
+        - /url: download/co.JPG
+      - link "tmpgupd4psp.txt" [ref=e217] [cursor=pointer]:
+        - /url: download/tmpgupd4psp.txt
+      - link "sample.jpg" [ref=e218] [cursor=pointer]:
+        - /url: download/sample.jpg
+      - link "test.txt" [ref=e219] [cursor=pointer]:
+        - /url: download/test.txt
+      - link "file_a.txt" [ref=e220] [cursor=pointer]:
+        - /url: download/file_a.txt
+      - link "file.invalid" [ref=e221] [cursor=pointer]:
+        - /url: download/file.invalid
+      - link "Image.PNG" [ref=e222] [cursor=pointer]:
+        - /url: download/Image.PNG
+      - link "7203.jpg" [ref=e223] [cursor=pointer]:
+        - /url: download/7203.jpg
+      - link "tmpasmtrk4k.txt" [ref=e224] [cursor=pointer]:
+        - /url: download/tmpasmtrk4k.txt
+      - link "tmpjcnqbgd4.txt" [ref=e225] [cursor=pointer]:
+        - /url: download/tmpjcnqbgd4.txt
+      - link "tmpk00rmu__.txt" [ref=e226] [cursor=pointer]:
+        - /url: download/tmpk00rmu__.txt
+      - link "testfile.txt" [ref=e227] [cursor=pointer]:
+        - /url: download/testfile.txt
+      - link "tmpvundan1z.txt" [ref=e228] [cursor=pointer]:
+        - /url: download/tmpvundan1z.txt
+      - link "sample3.pdf" [ref=e229] [cursor=pointer]:
+        - /url: download/sample3.pdf
+      - link "tmpwc9ttn0w.txt" [ref=e230] [cursor=pointer]:
+        - /url: download/tmpwc9ttn0w.txt
+      - link "test_file.txt" [ref=e231] [cursor=pointer]:
+        - /url: download/test_file.txt
+      - link "tmppk3fbjjd.txt" [ref=e232] [cursor=pointer]:
+        - /url: download/tmppk3fbjjd.txt
+      - link "tmp50zf_bbz.txt" [ref=e233] [cursor=pointer]:
+        - /url: download/tmp50zf_bbz.txt
+      - link "tmpv3ypq97u.txt" [ref=e234] [cursor=pointer]:
+        - /url: download/tmpv3ypq97u.txt
+      - link "tmp33qwgw3b.txt" [ref=e235] [cursor=pointer]:
+        - /url: download/tmp33qwgw3b.txt
+      - link "tmpyflhjvmh.txt" [ref=e236] [cursor=pointer]:
+        - /url: download/tmpyflhjvmh.txt
+      - link "tmpo3sc2p6t.txt" [ref=e237] [cursor=pointer]:
+        - /url: download/tmpo3sc2p6t.txt
+      - link "Localizable-ErrorMacOS.strings" [ref=e238] [cursor=pointer]:
+        - /url: download/Localizable-ErrorMacOS.strings
+      - link "tmp05ec3k6y.png" [ref=e239] [cursor=pointer]:
+        - /url: download/tmp05ec3k6y.png
+      - link "dummy.txt" [ref=e240] [cursor=pointer]:
+        - /url: download/dummy.txt
+      - link "tmpfsqlhzjn.txt" [ref=e241] [cursor=pointer]:
+        - /url: download/tmpfsqlhzjn.txt
+      - link "test2.jpg" [ref=e242] [cursor=pointer]:
+        - /url: download/test2.jpg
+      - link "tmp19ja7gbf.txt" [ref=e243] [cursor=pointer]:
+        - /url: download/tmp19ja7gbf.txt
+      - link "selenide-intro.txt" [ref=e244] [cursor=pointer]:
+        - /url: download/selenide-intro.txt
+      - link "tmpeswo5ndp.txt" [ref=e245] [cursor=pointer]:
+        - /url: download/tmpeswo5ndp.txt
+      - link "tmpsianvulj.txt" [ref=e246] [cursor=pointer]:
+        - /url: download/tmpsianvulj.txt
+      - link "apple.png" [ref=e247] [cursor=pointer]:
+        - /url: download/apple.png
+      - link "Dogs Imge.jpg" [ref=e248] [cursor=pointer]:
+        - /url: download/Dogs Imge.jpg
+      - link "file1.gif" [ref=e249] [cursor=pointer]:
+        - /url: download/file1.gif
+      - link "1sample_pdf.edit.pdf" [ref=e250] [cursor=pointer]:
+        - /url: download/1sample_pdf.edit.pdf
+      - link "sample.xlsx" [ref=e251] [cursor=pointer]:
+        - /url: download/sample.xlsx
+      - link "tmpu03hn8da.txt" [ref=e252] [cursor=pointer]:
+        - /url: download/tmpu03hn8da.txt
+      - link "tmp46zj2n3b.txt" [ref=e253] [cursor=pointer]:
+        - /url: download/tmp46zj2n3b.txt
+      - link "image1.png" [ref=e254] [cursor=pointer]:
+        - /url: download/image1.png
+      - link "test-document.txt" [ref=e255] [cursor=pointer]:
+        - /url: download/test-document.txt
+      - link "TestUpload.jpg" [ref=e256] [cursor=pointer]:
+        - /url: download/TestUpload.jpg
+      - link "tmpdt1j66mi.txt" [ref=e257] [cursor=pointer]:
+        - /url: download/tmpdt1j66mi.txt
+      - link "tmpizxkf2dp.txt" [ref=e258] [cursor=pointer]:
+        - /url: download/tmpizxkf2dp.txt
+      - link "png-transparent-apple-red-cartoon-apple-cartoon-character-natural-foods-food.png" [ref=e259] [cursor=pointer]:
+        - /url: download/png-transparent-apple-red-cartoon-apple-cartoon-character-natural-foods-food.png
+      - link "Book1.xlsx" [ref=e260] [cursor=pointer]:
+        - /url: download/Book1.xlsx
+      - link "Screenshot (484).png" [ref=e261] [cursor=pointer]:
+        - /url: download/Screenshot (484).png
+      - link "Localizable-GeneralMacOS.strings" [ref=e262] [cursor=pointer]:
+        - /url: download/Localizable-GeneralMacOS.strings
+      - link "tmp0x19v7tz.txt" [ref=e263] [cursor=pointer]:
+        - /url: download/tmp0x19v7tz.txt
+      - link "test_upload.txt" [ref=e264] [cursor=pointer]:
+        - /url: download/test_upload.txt
+      - link "tmp06a_sqjk.txt" [ref=e265] [cursor=pointer]:
+        - /url: download/tmp06a_sqjk.txt
+      - link "processed_duz_temiz.jpg" [ref=e266] [cursor=pointer]:
+        - /url: download/processed_duz_temiz.jpg
+      - link "common.resource" [ref=e267] [cursor=pointer]:
+        - /url: download/common.resource
+      - link "test_image.png" [ref=e268] [cursor=pointer]:
+        - /url: download/test_image.png
+      - link "tmpvit99xs7.txt" [ref=e269] [cursor=pointer]:
+        - /url: download/tmpvit99xs7.txt
+      - link "Шаблон заявления.doc" [ref=e270] [cursor=pointer]:
+        - /url: download/Шаблон заявления.doc
+      - link "tmp3mug6rw6.txt" [ref=e271] [cursor=pointer]:
+        - /url: download/tmp3mug6rw6.txt
+      - link "Test2.pdf" [ref=e272] [cursor=pointer]:
+        - /url: download/Test2.pdf
+      - link "test_document.txt" [ref=e273] [cursor=pointer]:
+        - /url: download/test_document.txt
+      - link "processed_virajli_yol.jpg" [ref=e274] [cursor=pointer]:
+        - /url: download/processed_virajli_yol.jpg
+      - link "tmpx0y44tco.txt" [ref=e275] [cursor=pointer]:
+        - /url: download/tmpx0y44tco.txt
+      - link "tmptwox8p1y.txt" [ref=e276] [cursor=pointer]:
+        - /url: download/tmptwox8p1y.txt
+      - link "tmpxzuq07wx.txt" [ref=e277] [cursor=pointer]:
+        - /url: download/tmpxzuq07wx.txt
+      - link "Flower.jpg" [ref=e278] [cursor=pointer]:
+        - /url: download/Flower.jpg
+      - link "test_upload_image.txt" [ref=e279] [cursor=pointer]:
+        - /url: download/test_upload_image.txt
+      - link "psr.pdf" [ref=e280] [cursor=pointer]:
+        - /url: download/psr.pdf
+      - link "large-test-file.txt" [ref=e281] [cursor=pointer]:
+        - /url: download/large-test-file.txt
+      - link "hello.jpg" [ref=e282] [cursor=pointer]:
+        - /url: download/hello.jpg
+  - generic [ref=e284]:
+    - separator [ref=e285]
+    - generic [ref=e286]:
+      - text: Powered by
+      - link "Elemental Selenium" [ref=e287] [cursor=pointer]:
+        - /url: http://elementalselenium.com/
+```
